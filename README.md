@@ -22,7 +22,7 @@ Linux for ARM (LFA) - руководство по сборке из исходн
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 export PATH=$PATH:$HOME/.cargo/bin
 
-cargo install mdbook mdbook-pdf
+cargo install mdbook mdbook-pdf mdbook-admonish
 ```
 
 ### Сборка руководства
@@ -33,7 +33,7 @@ mdbook serve --open
 ```
 
 <details>
-  <summary><h2>Донат</h2></summary>
-  <p>Вы можете отблагодарить автора, обычного студента, за проделанную работу:</p>
+  <summary><b>Донат</b></summary>
+  <p>Вы можете отблагодарить автора за проделанную работу:</p>
   <blockquote>2202 2062 5233 5406 (Сбербанк)</blockquote>
 </details>
