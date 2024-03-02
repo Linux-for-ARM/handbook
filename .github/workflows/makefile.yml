@@ -22,3 +22,9 @@ jobs:
 
     - name: Copy PDF file to project root
       run: make pdf
+
+    - name: Commit changes
+      run: git commit -m "Generate utput.pdf file"
+
+    - name: Push changes
+      run: git push origin HEAD:master
