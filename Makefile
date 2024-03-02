@@ -4,7 +4,7 @@ all:
 install-deps:
 	sudo apt update
 	sudo apt install rustc cargo -y --fix-missing
-	cargo install mdbook mdbook-df mdbook-admonish
+	cargo install mdbook mdbook-pdf mdbook-admonish
 
 pdf: all
 	cp -v ./book/pdf/output.pdf ./
