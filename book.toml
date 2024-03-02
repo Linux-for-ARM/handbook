@@ -1,0 +1,21 @@
+[book]
+authors = ["cov_id111"]
+language = "ru"
+multilingual = false
+src = "md"
+title = "Linux for ARM"
+
+[output.html]
+preferred-dark-theme = "ayu"
+git-repository-url = "https://gitlab.com/linux-for-arm/lfa"
+git-repository-icon = "fa-github"
+input-404 = "404.md"
+additional-css = ["././mdbook-admonish.css", "././1.css", "./mdbook-admonish.css"]
+
+[preprocessor]
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
+
+[output.pdf]
