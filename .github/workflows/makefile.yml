@@ -23,6 +23,9 @@ jobs:
     - name: Copy PDF file to project root
       run: make pdf
 
+    - name: Stage changed files
+      run: git add output.pdf
+
     - name: Commit changes
       run: git commit -m "Generate utput.pdf file"
 
