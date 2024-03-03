@@ -52,7 +52,7 @@
 - [Создание архива системы](create_tarball.md)
 - [Вспомогательные материалы](additional/README.md)
   - [Процессоры ARM](additional/arm.md)
-  - [Строение ОС Linux](additional/os-structure.md)
+  - [Заметки об ОС Linux](additional/os-structure.md)
     - [Часть 1](additional/os-structure1.md)
     - [Часть 2](additional/os-structure2.md)
     - [Часть 3](additional/os-structure3.md)
