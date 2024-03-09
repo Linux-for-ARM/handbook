@@ -57,6 +57,7 @@
     - [Часть 2](additional/os-structure2.md)
     - [Часть 3](additional/os-structure3.md)
     - [Часть 4](additional/os-structure4.md)
+  - [Управление пакетами](additional/pkgmgt.md)
   - [Сборка ПО из исходного кода](additional/compile.md)
   - [Кросс-компилятор](additional/cross-compiler.md)
   - [FPU в ARM-процессорах](additional/fpu.md)
