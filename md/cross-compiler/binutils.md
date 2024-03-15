@@ -18,6 +18,8 @@ cd build
   --target=$LFA_TGT \
   --with-sysroot=$LFA_CROSS \
   --disable-nls \
+  --enable-gprofng=no \
+  --disable-werror \
   --disable-multilib
 ```
 
@@ -31,7 +33,11 @@ cd build
 >
 > `--disable-nls` - отключает сборку пакета с поддержкой интернационализации и локализации. В кросс-компиляторе это не нужно.
 >
+> `--enable-gprofng=no` - отключает сборку `gprofng`, который не нужен в кросс-компиляторе.
+>
 > `--disable-werror` - отключает остановку сборку при возникновении предупреждений.
+>
+> `--disable-multilib` - отключает сборку multilib.
 
 ## Сборка
 

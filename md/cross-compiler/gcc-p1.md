@@ -29,6 +29,15 @@ cd build
 
 Запустите скрипт `configure`:
 
+~~~admonish warning title="Внимание"
+Далее и на протяжении всего руководства, если вы собираете систему для AArch64, то **не используйте** переменные окружения `$LFA_FLOAT` и `$LFA_FPU`, а также пропускайте при вводе команд строки, содержащие эти переменные окружения. Например, если вы собираете систему для AArch64, то скрипту `configure` не следует передавать эти аргументы:
+
+```bash
+  --with-float=$LFA_FLOAT \
+  --with-fpu=$LFA_FPU
+```
+~~~
+
 ```bash
 ../configure --prefix=$LFA/tools \
   --build=$LFA_HOST \
@@ -39,10 +48,14 @@ cd build
   --disable-shared \
   --without-headers \
   --with-newlib \
+  --enable-default-pie \
+  --enable-default-ssp \
   --disable-decimal-float \
   --disable-libgomp \
   --disable-libmudflap \
   --disable-libssp \
+  --disable-libvtv \
+  --disable-libstdcxx \
   --disable-libatomic \
   --disable-libquadmath \
   --disable-threads \
@@ -63,6 +76,8 @@ cd build
 >
 > `--with-newlib` - собрать `libgcc` без использования библиотек С.
 >
+> `--enable-default-pie`, `--enable-default-ssp` - позволяют GCC по умолчанию компилировать программы с некоторыми средствами усиления безопасности.
+>
 > `--disable-decimal-float` - отключить поддеркжу десятичной плавающей запятой (IEEE 754-2008). Нам это пока не нужно.
 >
 > `--disable-libgomp` - не собирать библиотеки времени выполнения GOMP.
@@ -70,6 +85,10 @@ cd build
 > `--disable-libmudflap` - не собирать библиотеку `libmudflap` (библиотека, которая может быть использована для проверки правильности использования указателей).
 >
 > `--disable-libssp` - не собирать библиотеки времени выполнения для обнаружения разбиения стека.
+>
+> `--disable-libvtv` - не собирать `libvtv`.
+>
+> `--disable-libstdcxx` - не собирать стандартную библиотеку C++.
 >
 > `--disable-libatomic` - не собирать атомарные операции.
 >
@@ -98,17 +117,6 @@ make all-gcc all-target-libgcc
 ```bash
 make install-gcc install-target-libgcc
 ```
-
-~~~admonish warning title="Внимание"
-Если во время компиляции пакета у вас возникли ошибки, то, возможно, в вашем случае поможет перекомпиляция GCC: запустите снова скрипт `../configure` из этапа настройки со всеми указанными там опциями *кроме следующих:*
-
-```bash
-  --with-float=$LFA_FLOAT \
-  --with-fpu=$LFA_FPU
-```
-
-Далее вновь выполните команду для сборки пакета (`make all-gcc all-target-libgcc`).
-~~~
 
 ~~~admonish note title="Содержимое пакета" collapsible=true
 На данный момент знать содержимое пакета GCC вам не требуется, поскольку сейчас мы собрали лишь небольшую его часть, предназначенную только для компиляции стандартной библиотеки С (`musl`). Информация о содержимом пакета GCC содержится [на втором проходе сборки GCC](gcc-p2.md).
