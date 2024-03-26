@@ -9,7 +9,7 @@
 GCC требует, чтобы пакеты GMP, MPFR и MPC либо присутствовали на хосте, либо представлены в виде исходных текстов в дереве исходного кода GCC. Распакуйте их:
 
 ```bash
-tar -xf ../mpfr-*.tar.bz2
+tar -xf ../mpfr-*.tar.xz
 tar -xf ../mpc-*.tar.gz
 tar -xf ../gmp-*.tar.xz
 
