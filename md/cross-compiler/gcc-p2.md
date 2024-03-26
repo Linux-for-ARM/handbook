@@ -5,7 +5,7 @@
 ## Подготовка
 
 ```bash
-tar -xf ../mpfr-*.tar.bz2
+tar -xf ../mpfr-*.tar.xz
 tar -xf ../mpc-*.tar.gz
 tar -xf ../gmp-*.tar.bz2
 
