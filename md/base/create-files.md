@@ -23,6 +23,54 @@ install -dv -m 0750 $LFA_SYS/root
 install -dv -m 1777 $LFA_SYS/{var/,}tmp
 ```
 
+~~~admonish tip title="Проверьте себя" collapsible=true
+После исполнения данных команд в директории `$LFA_SYS` должна быть такая структура:
+
+```
+/home/lfa/lfa/baseOS
+|-- bin
+|-- boot
+|-- dev
+|-- etc
+|-- home
+|-- lib
+|   |-- firmware
+|   `-- modules
+|-- mnt
+|-- opt
+|-- proc
+|-- root
+|-- sbin
+|-- srv
+|-- sys
+|-- tmp
+|-- usr
+|   |-- bin
+|   |-- include
+|   |-- lib
+|   |-- local
+|   |   |-- bin
+|   |   |-- include
+|   |   |-- lib
+|   |   |-- sbin
+|   |   |-- share
+|   |   `-- src
+|   |-- sbin
+|   |-- share
+|   `-- src
+`-- var
+    |-- cache
+    |-- lib
+    |-- local
+    |-- lock
+    |-- log
+    |-- opt
+    |-- run
+    |-- spool
+    `-- tmp
+```
+~~~
+
 ## Создание ряда системных файлов
 
 Обычно системы Linux хранят список смонтированных файловых систем в `/etc/mtab`. С учётом того, как устроена наша система, в качестве `/etc/mtab` в ней будет выступать ссылка на `/proc/mounts`:
