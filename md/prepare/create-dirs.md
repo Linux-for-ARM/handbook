@@ -16,3 +16,30 @@ echo "export LFA_CROSS=\$LFA/tools/\$LFA_TGT" >> ~/.bashrc
 ```bash
 mkdir -v src
 ```
+
+В итоге в домашней папке пользователя `lfa` будет примерно такая структура файлов:
+
+```
+/home/lfa
+|-- lfa/
+|   `-- tools/
+|       `-- aarch64-linux-musleabihf/
+|           `-- usr/ -> .
+`-- src/
+```
+
+И содержимое файла `~/.bashrc` после всех записей в него (в зависимости от выбранной вами архитектуры его содержимое может незначительно меняться):
+
+```bash
+set +h
+umask 022
+unset CFLAGS
+LFA=$HOME/lfa
+LC_ALL=C
+PATH=$LFA/tools/bin:/bin:/usr/bin
+export LFA LC_ALL PATH
+export LFA_HOST="x86_64-cross-linux-gnu"
+export LFA_TGT="aarch64-linux-musleabihf"
+export LFA_ARCH="armv8-a"
+export LFA_CROSS=$LFA/tools/$LFA_TGT
+```
