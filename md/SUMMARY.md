@@ -52,6 +52,7 @@
   - [Эмуляция в QEMU (ARM)](bootloader/qemu.md)
 - [Конец](the-end.md)
 - [Создание архива системы](create_tarball.md)
+- [Что далее?](next.md)
 - [Вспомогательные материалы](additional/README.md)
   - [Процессоры ARM](additional/arm.md)
   - [Заметки об ОС Linux](additional/os-structure.md)
