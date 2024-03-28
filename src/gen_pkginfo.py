@@ -49,6 +49,7 @@ def get_md_str(pkg: dict, pkg_lst: dict):
 
 	return f"> {descr}\n\
 > - **Версия:** {pkg_lst[pkg['package']]['version']}\n\
+> - **Домашняя страница:** <{pkg_lst[pkg['package']]['home_page']}>\n\
 > - **Время сборки:** {pkg['sbu']} ОВС\n"
 
 def write_to_pkg_md(data: str, pkg_id: str, dir_pth: str):
