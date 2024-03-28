@@ -59,11 +59,11 @@ package = "musl"
 sbu = 1
 dir_pth = "base"
 
-[[package]]
-id = "lfa_init"
-package = "lfa_init"
-sbu = 10
-dir_pth = "base"
+# [[package]]
+# id = "lfa_init"
+# package = "lfa_init"
+# sbu = 10
+# dir_pth = "base"
 
 [[package]]
 id = "busybox"

@@ -38,11 +38,6 @@
 - Домашняя страница: <https://www.iana.org/protocols>
 - Скачать: <https://github.com/Mic92/iana-etc/releases/download/20240125/iana-etc-20240125.tar.gz>
 - MD5 сумма: `aed66d04de615d76c70890233081e584`
-## lfa_init-1.0
-Элементарная система инициализации для LFA, поддерживающая 6 уровней запуска.
-- Домашняя страница: <https://github.com/linux-for-arm/init>
-- Скачать: <>
-- MD5 сумма: ``
 ## musl-1.2.5
 Минималистичная стандартная библиотека языка С.
 - Домашняя страница: <https://musl.libc.org>

@@ -32,8 +32,6 @@
   - [Создание файлов и каталогов](base/create-files.md)
   - [libgcc](base/libgcc.md)
   - [musl](base/musl.md)
-  - [rust](base/rust.md)
-  - [lfa_init](base/init.md)
   - [busybox](base/busybox.md)
   - [iana-etc](base/iana-etc.md)
   - [wireless-tools](base/wireless-tools.md)

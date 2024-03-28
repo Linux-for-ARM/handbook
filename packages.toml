@@ -64,12 +64,12 @@ home_page = "https://musl.libc.org"
 download = "https://musl.libc.org/releases/musl-1.2.5.tar.gz"
 md5 = "ac5cfde7718d0547e224247ccfe59f18"
 
-[package.lfa_init]
-version = "1.0"
-description = "Элементарная система инициализации для LFA, поддерживающая 6 уровней запуска."
-home_page = "https://github.com/linux-for-arm/init"
-download = ""
-md5 = ""
+# [package.lfa_init]
+# version = "1.0"
+# description = "Элементарная система инициализации для LFA, поддерживающая 6 уровней запуска."
+# home_page = "https://github.com/linux-for-arm/init"
+# download = ""
+# md5 = ""
 
 [package.u-boot]
 version = "2023.10"
