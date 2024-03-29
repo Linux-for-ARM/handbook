@@ -6,6 +6,15 @@
 
 Можете посетить проект [The Linux Documentation Project](https://tldp.org), содержащий большое число man-страниц, всевозможных HOWTO и прочую документацию.
 
+Рекомендуем также посетить следующие сайты:
+
+- [Опыт создания сборок Linux под одноплатники с поддержкой обновлений](https://habr.com/ru/articles/470519/);
+- [Немного о ARM Security Extensions (aka ARM TrustZone)](https://habr.com/ru/articles/309618/);
+- [[Сборка системы для Orange Pi 5] Orange Pi 5 (как настоящий...)](https://habr.com/ru/articles/775488/);
+- [Сборка прошивки из исходников для Orange PI i96(Orange PI 2g-iot)](https://habr.com/ru/articles/763996/);
+- [Документация загрузчика U-Boot](https://docs.u-boot.org/en/latest/index.html);
+- [LFS Hints](https://linuxfromscratch.org/hints/)
+
 ---
 
 <details>
