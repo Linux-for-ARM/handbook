@@ -45,3 +45,10 @@ make ARCH=arm64 INSTALL_HDR_PATH=$LFA_CROSS headers_install
 - `$LFA_CROSS/include/video/*.h` - заголовки Linux API для работы с видео.
 - `$LFA_CROSS/include/xen/*.h` - заголовки Linux API XEN.
 ~~~
+
+---
+
+> **Смотрите также:**
+>
+> - [Сборка ПО из исходного кода](../additional/compile.md)
+> - [Кросс-компилятор](../additional/cross-compiler.md)
