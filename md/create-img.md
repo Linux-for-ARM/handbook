@@ -14,7 +14,7 @@ dd if=/dev/zero bs=1M count=2 of=bootloader.img
 
 ```bash
 dd if=$LFA/bootloader.bin \
-  conv=notrunk seek=128 \
+  conv=notrunc seek=128 \
   of=bootloader.img
 ```
 
