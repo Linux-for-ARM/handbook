@@ -50,25 +50,25 @@ make ARCH=arm64 CROSS_COMPILE=$LFA_TGT-
 Конфигурационный файл `.config` содержит все настройки конфигурации только что собранного ядра. Было бы неплохим сохранить этот файл для дальнейшего пользования:
 
 ```bash
-cp -v .config $LFA_SYS/boot/config-6.6.6-lfa-1.0
+cp -v .config $LFA_SYS/boot/config-6.6.6
 ```
 
 Скопируйте файл `System.map` в `/boot`:
 
 ```bash
-cp -v System.map $LFA_SYS/boot/System.map-6.6.6-lfa-1.0
+cp -v System.map $LFA_SYS/boot/System.map-6.6.6
 ```
 
 Полученное ядро будет находиться в директории `arch/arm64/boot`. Возможно, что там будет находиться несколько вариантов одного и того же ядра, просто с разным сжатием или добавлением помощников загрузчика. Следуйте инструкциям вашего загрузчика по копированию ядра в конечную систему. Например:
 
 ```bash
-cp -iv arch/arm64/boot/Image.gz $LFA_SYS/boot/vmlinux-6.6.6-lfa-1.0
+cp -iv arch/arm64/boot/Image $LFA_SYS/boot/vmlinuz-6.6.6
 ```
 
-Для того, чтобы не указывать в опциях ядра полное имя `vmlinux-6.6.6-lfa-1.0` создайте символическую ссылку:
+Для того, чтобы не указывать в опциях ядра полное имя `vmlinuz-6.6.6` создайте символическую ссылку:
 
 ```bash
-ln -svf vmlinux-6.6.6-lfa-1.0 $LFA_SYS/vmlinux
+ln -svf vmlinuz-6.6.6 $LFA_SYS/vmlinuz
 ```
 
 Также в `arch/arm64/boot/dts` будут содержаться файлы Devicetree. Примерная структура директорий в `arch/arm64/boot`:
@@ -84,10 +84,10 @@ ln -svf vmlinux-6.6.6-lfa-1.0 $LFA_SYS/vmlinux
 
 > В данном руководстве на данный момент поддерживаются платы на базе SoC Allwinner, Broadcom и Rockchip. Поддержка других моделей плат пока не планируется.
 
-Создайте в `$LFA_SYS/boot` директорию `dts`:
+Создайте в `$LFA_SYS/boot` директорию `dtb-6.6.6`:
 
 ```bash
-mkdir -pv $LFA_SYS/boot/dts
+mkdir -pv $LFA_SYS/boot/dtb-6.6.6
 ```
 
 И скопируйте из `arch/arm64/boot/dts` соответствующую директорию с файлами Devicetree:
@@ -95,23 +95,23 @@ mkdir -pv $LFA_SYS/boot/dts
 - Для Allwinner:
 
 ```bash
-cp -rv arch/arm64/boot/dts/allwinner $LFA_SYS/boot/dts
+cp -rv arch/arm64/boot/dts/allwinner/*.dtb $LFA_SYS/boot/dtb-6.6.6
 ```
 
 - Для Broadcom:
 
 ```bash
-cp -rv arch/arm64/boot/dts/broadcom $LFA_SYS/boot/dts
+cp -rv arch/arm64/boot/dts/broadcom/*.dtb $LFA_SYS/boot/dtb-6.6.6
 ```
 
 - Для Rockchip:
 
 ```bash
-cp -rv arch/arm64/boot/dts/rockchip $LFA_SYS/boot/dts
+cp -rv arch/arm64/boot/dts/rockchip/*.dtb $LFA_SYS/boot/dtb-6.6.6
 ```
 
 ~~~admonish note title="Содержимое пакета" collapsible=true
-- **Установленные файлы:** `.config`, `zImage`, `uImage`, `bzImage`, `vmlinux`, `System.map`
+- **Установленные файлы:** `.config-6.6.6`, `vmlinuz-6.6.6`, `System.map-6.6.6`
 
 ### Описание компонентов
 
