@@ -85,6 +85,6 @@ dir_pth = "bootloader"
 
 [[package]]
 id = "tf-a"
-package = "tf-a"
+package = "TF-A"
 sbu = 1
 dir_pth = "bootloader"

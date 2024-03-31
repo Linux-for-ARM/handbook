@@ -28,6 +28,11 @@
 - Домашняя страница: <https://www.mpfr.org>
 - Скачать: <https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.1.tar.xz>
 - MD5 сумма: `523c50c6318dde6f9dc523bc0244690a`
+## TF-A-2.10.2
+Проект Trusted Firmware-A предоставляет эталонную реализацию безопасного программного обеспечения для процессоров класса ARMv7-A и ARMv8-A.
+- Домашняя страница: <https://www.trustedfirmware.org/projects/tf-a/>
+- Скачать: <https://git.trustedfirmware.org/TF-A/trusted-firmware-a.git/snapshot/trusted-firmware-a-lts-v2.10.2.tar.gz>
+- MD5 сумма: `9d223fd5e7863ec223565c385f9a68ed`
 ## binutils-2.42
 Этот пакет содержит компоновщик, ассемблер и другие утилиты для работы с объектными файлами.
 - Домашняя страница: <https://www.gnu.org/software/binutils>
@@ -43,11 +48,6 @@
 - Домашняя страница: <https://musl.libc.org>
 - Скачать: <https://musl.libc.org/releases/musl-1.2.5.tar.gz>
 - MD5 сумма: `ac5cfde7718d0547e224247ccfe59f18`
-## tf-a-2.10.2
-Проект Trusted Firmware-A предоставляет эталонную реализацию безопасного мирового программного обеспечения для процессоров класса Armv7-A и Armv8-A.
-- Домашняя страница: <https://www.trustedfirmware.org/projects/tf-a/>
-- Скачать: <https://git.trustedfirmware.org/TF-A/trusted-firmware-a.git/snapshot/trusted-firmware-a-lts-v2.10.2.tar.gz>
-- MD5 сумма: `9d223fd5e7863ec223565c385f9a68ed`
 ## u-boot-2023.10
 Загрузчик операционной системы, предназначенный для встраиваемых систем на MIPS, ARM, PowerPC и т.д.
 - Домашняя страница: <https://source.denx.de/u-boot/u-boot>
