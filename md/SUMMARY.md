@@ -26,6 +26,7 @@
   - [gcc (проход 1)](cross-compiler/gcc-p1.md)
   - [musl](cross-compiler/musl.md)
   - [gcc (проход 2)](cross-compiler/gcc-p2.md)
+  - [Проверка кросс-компилятора](cross-compiler/check.md)
   - [Очистка и сохранение](cross-compiler/cleanup.md)
   - [Объявление дополнительных переменных](cross-compiler/env.md)
 - [Сборка базовой системы](base/README.md)
