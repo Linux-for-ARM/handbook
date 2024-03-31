@@ -77,3 +77,10 @@ description = "Загрузчик операционной системы, пр�
 home_page = "https://source.denx.de/u-boot/u-boot"
 download = "https://source.denx.de/u-boot/u-boot/-/archive/v2023.10/u-boot-v2023.10.tar.bz2"
 md5 = "3491cd4aa6c52a7c77f7f626d4df9442"
+
+[package.tf-a]
+version = "2.10.2"
+description = "Проект Trusted Firmware-A предоставляет эталонную реализацию безопасного мирового программного обеспечения для процессоров класса Armv7-A и Armv8-A."
+home_page = "https://www.trustedfirmware.org/projects/tf-a/"
+download = "https://git.trustedfirmware.org/TF-A/trusted-firmware-a.git/snapshot/trusted-firmware-a-lts-v2.10.2.tar.gz"
+md5 = "9d223fd5e7863ec223565c385f9a68ed"

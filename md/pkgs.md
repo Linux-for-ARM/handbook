@@ -43,6 +43,11 @@
 - Домашняя страница: <https://musl.libc.org>
 - Скачать: <https://musl.libc.org/releases/musl-1.2.5.tar.gz>
 - MD5 сумма: `ac5cfde7718d0547e224247ccfe59f18`
+## tf-a-2.10.2
+Проект Trusted Firmware-A предоставляет эталонную реализацию безопасного мирового программного обеспечения для процессоров класса Armv7-A и Armv8-A.
+- Домашняя страница: <https://www.trustedfirmware.org/projects/tf-a/>
+- Скачать: <https://git.trustedfirmware.org/TF-A/trusted-firmware-a.git/snapshot/trusted-firmware-a-lts-v2.10.2.tar.gz>
+- MD5 сумма: `9d223fd5e7863ec223565c385f9a68ed`
 ## u-boot-2023.10
 Загрузчик операционной системы, предназначенный для встраиваемых систем на MIPS, ARM, PowerPC и т.д.
 - Домашняя страница: <https://source.denx.de/u-boot/u-boot>

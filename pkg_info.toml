@@ -82,3 +82,9 @@ id = "u-boot"
 package = "u-boot"
 sbu = 10
 dir_pth = "bootloader"
+
+[[package]]
+id = "tf-a"
+package = "tf-a"
+sbu = 1
+dir_pth = "bootloader"
