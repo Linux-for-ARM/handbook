@@ -90,32 +90,33 @@ ln -svf vmlinuz-6.6.6 $LFA_SYS/vmlinuz
 mkdir -pv $LFA_SYS/boot/dtb-6.6.6
 ```
 
+После чего вам нужно в этой директории создать поддиректорию с именем SoC, который используется в вашей плате:
+
+```bash
+mkdir -pv $LFA_SYS/boot/dtb-6.6.6/<имя вашего SoC>
+```
+
+замените `<имя вашего SoC>` на имя SoC, которое используется в плате. Название указывайте с маленькой буквы.
+
+Например, в точности, как названия директорий в `arch/arm64/boot`:
+
+```bash
+mkdir -pv $LFA_SYS/boot/dtb-6.6.6/allwinner
+```
+
 И скопируйте из `arch/arm64/boot/dts` соответствующую директорию с файлами Devicetree:
 
-- Для Allwinner:
-
 ```bash
-cp -rv arch/arm64/boot/dts/allwinner/*.dtb $LFA_SYS/boot/dtb-6.6.6
-```
-
-- Для Broadcom:
-
-```bash
-cp -rv arch/arm64/boot/dts/broadcom/*.dtb $LFA_SYS/boot/dtb-6.6.6
-```
-
-- Для Rockchip:
-
-```bash
-cp -rv arch/arm64/boot/dts/rockchip/*.dtb $LFA_SYS/boot/dtb-6.6.6
+cp -rv arch/arm64/boot/dts/<имя вашего SoC>/*.dtb $LFA_SYS/boot/dtb-6.6.6/<имя вашего SoC>/
 ```
 
 ~~~admonish note title="Содержимое пакета" collapsible=true
-- **Установленные файлы:** `.config-6.6.6`, `vmlinuz-6.6.6`, `System.map-6.6.6`
+- **Установленные файлы:** `.config-6.6.6`, `vmlinuz-6.6.6`, `System.map-6.6.6`, `dtb/*`
 
 ### Описание компонентов
 
 - `.config` - содержит параметры сборки ядра.
-- `zImage`, `uImage`, `bzImage`, `vmlinux` - скомпилированное ядро Linux.
+- `Image`, `vmlinuz` - скомпилированное ядро Linux.
 - `System.map` - список адресов и символов; в нём указаны точки входа и адреса всех функций и структур данных в ядре. Иногда полезен при отладке.
+- `dtb/` - директория с файлами [devicetree](../additional/dtb.md).
 ~~~
