@@ -88,3 +88,10 @@ id = "tf-a"
 package = "TF-A"
 sbu = 1
 dir_pth = "bootloader"
+
+[[package]]
+id = "wtools"
+package = "Wireless Tools"
+sbu = 0.1
+dir_pth = "base"
+patch = ["https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_scanning-1.patch"]

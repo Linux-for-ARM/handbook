@@ -84,3 +84,10 @@ description = "Проект Trusted Firmware-A предоставляет эта
 home_page = "https://www.trustedfirmware.org/projects/tf-a/"
 download = "https://git.trustedfirmware.org/TF-A/trusted-firmware-a.git/snapshot/trusted-firmware-a-lts-v2.10.2.tar.gz"
 md5 = "9d223fd5e7863ec223565c385f9a68ed"
+
+[package.'Wireless Tools']
+version = "29"
+description = "Набор инструментов для работы с Wireless Extensions (WE — API ядра Linux, позволяющий драйверу передавать в пользовательское пространство конфигурацию и статистику, характерные для беспроводных локальных сетей)."
+home_page = "https://hewlettpackard.github.io/wireless-tools/"
+download = "https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz"
+md5 = "e06c222e186f7cc013fd272d023710cb"
