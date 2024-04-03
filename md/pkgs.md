@@ -33,6 +33,11 @@
 - Домашняя страница: <https://www.trustedfirmware.org/projects/tf-a/>
 - Скачать: <https://git.trustedfirmware.org/TF-A/trusted-firmware-a.git/snapshot/trusted-firmware-a-lts-v2.10.2.tar.gz>
 - MD5 сумма: `9d223fd5e7863ec223565c385f9a68ed`
+## Wireless Tools-29
+Набор инструментов для работы с Wireless Extensions (WE — API ядра Linux, позволяющий драйверу передавать в пользовательское пространство конфигурацию и статистику, характерные для беспроводных локальных сетей).
+- Домашняя страница: <https://hewlettpackard.github.io/wireless-tools/>
+- Скачать: <https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz>
+- MD5 сумма: `e06c222e186f7cc013fd272d023710cb`
 ## binutils-2.42
 Этот пакет содержит компоновщик, ассемблер и другие утилиты для работы с объектными файлами.
 - Домашняя страница: <https://www.gnu.org/software/binutils>
