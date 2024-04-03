@@ -47,10 +47,20 @@ def get_md_str(pkg: dict, pkg_lst: dict):
 	else:
 		descr = pkg_lst[pkg["package"]]["description"]
 
-	return f"> {descr}\n\
+	pkginfo = f"> {descr}\n\
 > - **Версия:** {pkg_lst[pkg['package']]['version']}\n\
 > - **Домашняя страница:** <{pkg_lst[pkg['package']]['home_page']}>\n\
 > - **Время сборки:** {pkg['sbu']} ОВС\n"
+
+	patch = pkg.get("patch")
+
+	if patch:
+		pkginfo = f"{pkginfo}> - **Необходимые патчи:**"
+		for p in patch:
+			pkginfo = f"{pkginfo}\n\
+>     - <{p}>"
+
+	return pkginfo
 
 def write_to_pkg_md(data: str, pkg_id: str, dir_pth: str):
 	pth = DIRS[dir_pth].joinpath(f"{pkg_id}.md")
