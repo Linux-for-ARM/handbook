@@ -1,4 +1,4 @@
-# Сборка TF-A
+# Allwinner: Сборка TF-A
 
 {{#include pkgs/tf-a.md}}
 
