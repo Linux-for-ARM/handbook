@@ -43,7 +43,7 @@ cp -v u-boot-sunxi-with-spl.bin $LFA/bootloader.bin
 ## Установка U-Boot
 
 ```admonish bug title="Under construction!"
-Инструкции ниже я перепечатал из [документации](https://docs.u-boot.org/en/latest/board/allwinner/sunxi.html#installing-u-boot) загрузчика и не уверен, что они применимы в нашем случае. Если вы знаете, как правильно устанавливать загрузчик ОС на определённый носитель информации, с которого будет происходить загрузки собранной системы LFA (MicroSD или eMMC), то, пожалуйста, свяжитесь со мной одним из следующих способов:
+Инструкции ниже я перепечатал из [**документации**](https://docs.u-boot.org/en/latest/board/allwinner/sunxi.html#installing-u-boot) загрузчика и не уверен, что они применимы в нашем случае. Если вы знаете, как правильно устанавливать загрузчик ОС на определённый носитель информации, с которого будет происходить загрузки собранной системы LFA (MicroSD или eMMC), то, пожалуйста, свяжитесь со мной одним из следующих способов:
 
 - [Создайте issue в репозитории руководства](https://github.com/Linux-for-ARM/handbook/issues/new), где опишете шаги по сборке и установке загрузчика;
 - [Напишите мне в личку в Telegram](https://t.me/brezhnev_zhiv)
@@ -70,4 +70,4 @@ dd if=boot-sunxi-with-spl.bin of=/dev/sdX bs=1k seek=8
 
 > **Смотрите также:**
 >
-> [Страница U-Boot на linux-sunxi WiKi](https://linux-sunxi.org/U-Boot)
+> [**Страница U-Boot на linux-sunxi WiKi**](https://linux-sunxi.org/U-Boot)

@@ -24,7 +24,7 @@ make odroid-c2_defconfig
 
 > **Для плат на базе SoC Allwinner:**
 >
-> На вики [linux-sunxi](https://linux-sunxi.org/) также можно найти имя `defconfig` файла на соответствующей странице платы.
+> На вики [**linux-sunxi**](https://linux-sunxi.org/) также можно найти имя `defconfig` файла на соответствующей странице платы.
 
 Вы можете сконфигурировать пакет командой:
 
@@ -52,7 +52,7 @@ CROSS_COMPILE=$LFA_TGT- DTC=/usr/bin/dtc make
 
 В этом случае `dtc` и `pylibfdt` не будут собраны. Система сборки проверит, что версия `dtc` достаточно новая. Она также убедится, что `pylibfdt` присутствует, если это необходимо.
 
-Обратите внимание, что инструменты [Host Tools](https://docs.u-boot.org/en/latest/build/tools.html) всегда собираются с включенной версией `libfdt`, поэтому в настоящее время невозможно собрать U-Boot с системной `libfdt`.
+Обратите внимание, что инструменты [**Host Tools**](https://docs.u-boot.org/en/latest/build/tools.html) всегда собираются с включенной версией `libfdt`, поэтому в настоящее время невозможно собрать U-Boot с системной `libfdt`.
 
 ### LTO
 
