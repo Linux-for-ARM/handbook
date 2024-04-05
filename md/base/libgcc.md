@@ -15,3 +15,11 @@ cp $LFA_CROSS/lib64/libgcc_s.so.1 $LFA_SYS/lib
 ```bash
 $STRIP $LFA_SYS/lib/libgcc_s.so.1
 ```
+
+~~~admonish note title="Содержимое пакета" collapsible=true
+- **Установленные библиотеки:** `libgcc_s.so.1`
+
+### Описание компонентов
+
+- `libgcc_s.so.1` - при компиляции динамически линкуемых программ с помощью GCC требуется, чтобы во время выполнения такой программы была загружена библиотека `libgcc_s.so.1` из состава GCC.
+~~~
