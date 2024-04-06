@@ -75,9 +75,9 @@ QEMU для ARM поддерживает специальную виртуаль
 ```bash
 if [ $LFA_TGT -eq "aarch64-linux-musleabihf" ]
 then
-  QEMU_DEFCONFIG_ARCH="arm64"
+  QEMU_ARCH="arm64"
 else
-  QEMU_DEFCONFIG_ARCH="arm"
+  QEMU_ARCH="arm"
 fi
 ```
 
@@ -85,7 +85,7 @@ fi
 
 ```bash
 make CROSS_COMPILE=$LFA_TGT- \
-  qemu_${QEMU_DEFCONFIG_ARCH}_defconfig
+  qemu_${QEMU_ARCH}_defconfig
 ```
 
 ## Сборка
