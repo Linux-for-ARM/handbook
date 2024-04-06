@@ -9,13 +9,13 @@
 ## Подготовка
 
 ```bash
-tar -xf ../mpfr-*.tar.xz
-tar -xf ../mpc-*.tar.gz
-tar -xf ../gmp-*.tar.bz2
+tar -xf ../gmp-6.3.0.tar.xz
+tar -xf ../mpc-1.3.1.tar.gz
+tar -xf ../mpfr-4.2.1.tar.xz
 
-mv -v mpfr-* mpfr
-mv -v mpc-* mpc
-mv -v gmp-* gmp
+mv -v gmp-6.3.0 gmp
+mv -v mpc-1.3.1 mpc
+mv -v mpfr-4.2.1 mpfr
 ```
 
 ## Настройка
