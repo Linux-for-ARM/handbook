@@ -10,3 +10,4 @@
   - <https://linux-sunxi.org/U-Boot#Compile_U-Boot>
   - <https://linux-sunxi.org/Manual_build_howto>
   - <https://habr.com/ru/companies/aladdinrd/articles/338806/>
+  - <https://wiki.gentoo.org/wiki/Comparison_of_init_systems>
