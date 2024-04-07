@@ -77,5 +77,6 @@
 
 ---
 
+- [Roadmap](roadmap.md)
 - [Что нового в этом релизе](whatsnew.md)
 - [Список изменений](changelog.md)
