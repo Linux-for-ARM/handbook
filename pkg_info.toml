@@ -18,26 +18,26 @@ dir_pth = "cross-compiler"
 [[package]]
 id = "gcc-p1"
 package = "GCC"
-sbu = 14.8
+sbu = 8
 dir_pth = "cross-compiler"
 
 [[package]]
 id = "gcc-p2"
 package = "GCC"
-sbu = 14.8
+sbu = 8
 dir_pth = "cross-compiler"
 
 [[package]]
 id = "musl"
 package = "musl"
-sbu = 5.4
+sbu = 0.2
 dir_pth = "cross-compiler"
 
 [[package]]
 id = "linux-headers"
 package = "Linux"
 description = "Заголовочные файлы ядра Linux, необходимые для сборки кросс-компилятора"
-sbu = "0.5"
+sbu = 0.5
 dir_pth = "cross-compiler"
 
 [[package]]
@@ -50,13 +50,13 @@ dir_pth = "kernel"
 id = "libgcc"
 package = "GCC"
 description = "При компиляции динамических библиотек с помощью GCC требуется, чтобы `libgcc` могла быть загружена во время выполнения программы. Поэтому нам нужно скопировать библиотеку `libgcc`, которая ранее была собрана для кросс-компилятора."
-sbu = 0
+sbu = 0.01
 dir_pth = "base"
 
 [[package]]
 id = "musl"
 package = "musl"
-sbu = 1
+sbu = 0.2
 dir_pth = "base"
 
 # [[package]]
@@ -68,7 +68,7 @@ dir_pth = "base"
 [[package]]
 id = "busybox"
 package = "BusyBox"
-sbu = 1
+sbu = 0.3
 dir_pth = "base"
 
 [[package]]
