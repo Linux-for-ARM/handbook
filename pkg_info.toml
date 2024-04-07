@@ -43,7 +43,7 @@ dir_pth = "cross-compiler"
 [[package]]
 id = "linux"
 package = "Linux"
-sbu = 666
+sbu = 23
 dir_pth = "kernel"
 
 [[package]]
