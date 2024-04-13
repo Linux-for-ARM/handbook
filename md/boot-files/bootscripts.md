@@ -66,3 +66,10 @@ klogd -c 3
 echo "Press <Enter>..."
 EOF
 ```
+
+---
+
+> **Смотрите также:**
+>
+> - [Заметки об ОС Linux. Часть 3. Система инициализации](../additional/os-structure3.md)
+> - [**SysV init must die**](https://busybox.net/~vda/init_vs_runsv.html)
