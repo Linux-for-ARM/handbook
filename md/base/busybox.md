@@ -18,6 +18,10 @@ make mrproper
 make ARCH=arm64 menuconfig
 ```
 
+### Процесс настройки
+
+В разделах `Archival Utilities`, `Coreutils`, `Console Utilities`, `Debian Utilities`, `klibc-utils`, `Editors` и т.д. выберите сборку программ и утилит в зависимости от того, в каких сценариях должна использоваться ваша система LFA, а также в зависимости от её конечного размера. Конечно, на её размер куда больше будут влиять ядро и файлы, необходимые для загрузки системы, но инструкции по уменьшению размера, к примеру, ядра Linux, ищите сами на просторах интернета.
+
 ### Система инициализации
 
 Поскольку чуть позже мы установим в LFA загрузочные скрипты, нам требуется система инициализации, которая эти скрипты будет исполнять. Для этого компилируйте BusyBox с поддержкой `init`, `halt`, `poweroff`, `reboot`. Кроме того, вам нужны программы `getty` и `login`.
@@ -31,6 +35,18 @@ Init Utilities  --->
 Login/Password Management Utilities  --->
   <*> getty     [CONFIG_GETTY]
   <*> login     [CONFIG_LOGIN]
+```
+
+### mdev
+
+В данном руководстве рекомендуется использовать `mdev` для динамического управления устройствами в директории `/dev`. Включите следующие опции:
+
+```
+Linux System Utilities  --->
+  <*> mdev                          [CONFIG_MDEV]
+    <*> Support /etc/mdev.conf      [CONFIG_FEATURE_MDEV_CONF]
+    <*> Support loading of firmware [CONFIG_FEATURE_MDEV_LOAD_FIRMWARE]
+    <*> Support daemon mode         [CONFIG_FEATURE_MDEV_DAEMON]
 ```
 
 ### Отключение опций
