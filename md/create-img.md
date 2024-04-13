@@ -124,4 +124,4 @@ sudo dd if=lfa-1.0.img of=/dev/sdX
 
 > **Смотрите также:**
 >
-> - [How to prepare a SD card?](https://docs.armbian.com/User-Guide_Getting-Started/#how-to-prepare-a-sd-card)
+> - [How to prepare a SD card?](https://docs.armbian.com/User-Guide_Getting-Started/#how-to-prepare-a-sd-card) (<https://docs.armbian.com/>).

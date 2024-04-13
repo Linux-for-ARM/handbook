@@ -71,5 +71,5 @@ EOF
 
 > **Смотрите также:**
 >
-> - [Заметки об ОС Linux. Часть 3. Система инициализации](../additional/os-structure3.md)
-> - [**SysV init must die**](https://busybox.net/~vda/init_vs_runsv.html)
+> - [Заметки об ОС Linux. Часть 3. Система инициализации](../additional/os-structure3.md);
+> - [**SysV init must die**](https://busybox.net/~vda/init_vs_runsv.html) (<https://busybox.net/>).

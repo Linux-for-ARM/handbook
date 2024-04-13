@@ -29,4 +29,4 @@ mkimage -A arm64 -T ramdisk -n uInitrd -d initramfs.cpio.gz uImage
 
 > **Смотрите также:**
 >
-> - [**Image vs zImage vs uImage (Stack Overflow)**](https://stackoverflow.com/questions/22322304/image-vs-zimage-vs-uimage)
+> - [**Image vs zImage vs uImage**](https://stackoverflow.com/questions/22322304/image-vs-zimage-vs-uimage) (<https://stackoverflow.com/>).

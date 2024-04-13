@@ -125,4 +125,4 @@ qemu-system-arm -machine virt \
 
 > **Смотрите также:**
 >
-> - [QEMU ARM — Das U-Boot](https://docs.u-boot.org/en/latest/board/emulation/qemu-arm.html) (документация U-Boot).
+> - [QEMU ARM — Das U-Boot](https://docs.u-boot.org/en/latest/board/emulation/qemu-arm.html) (<https://docs.u-boot.org/en/latest/>).

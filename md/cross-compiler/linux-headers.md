@@ -56,5 +56,5 @@ make ARCH=arm64 INSTALL_HDR_PATH=$LFA_CROSS headers_install
 
 > **Смотрите также:**
 >
-> - [Сборка ПО из исходного кода](../additional/compile.md)
-> - [Кросс-компилятор](../additional/cross-compiler.md)
+> - [Сборка ПО из исходного кода](../additional/compile.md);
+> - [Кросс-компилятор](../additional/cross-compiler.md).

@@ -70,4 +70,4 @@ dd if=boot-sunxi-with-spl.bin of=/dev/sdX bs=1k seek=8
 
 > **Смотрите также:**
 >
-> [**Страница U-Boot на linux-sunxi WiKi**](https://linux-sunxi.org/U-Boot)
+> - [**Страница U-Boot на linux-sunxi WiKi**](https://linux-sunxi.org/U-Boot) (<https://linux-sunxi.org/>)
