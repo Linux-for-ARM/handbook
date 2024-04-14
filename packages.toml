@@ -8,6 +8,13 @@ home_page = "https://www.gnu.org/software/binutils"
 download = "https://sourceware.org/pub/binutils/releases/binutils-2.42.tar.xz"
 md5 = "a075178a9646551379bfb64040487715"
 
+[package."LFA Bootscripts"]
+version = "1.0"
+description = "Набор скриптов, используемых системой инициализации из BusyBox для запуска/остановки демонов и иных программ во время запуска/выключения LFA."
+home_page = "https://github.com/Linux-for-ARM/lfa-bootscripts/"
+download = "https://github.com/Linux-for-ARM/lfa-bootscripts/releases/download/v1.0/bootscripts-1.0.tar.xz"
+md5 = "217d8f3d253f980691129e1c251379fc"
+
 [package.BusyBox]
 version = "1.36.1"
 description = "Объединяет крошечные версии многих распространённых утилит UNIX в один небольшой двоичный файл (1-2 Мбайт). Он заменяет большинство утилит, которые обычно находятся в GNU Coreutils, GNU Findutils и т.д."

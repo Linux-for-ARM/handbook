@@ -95,3 +95,9 @@ package = "Wireless Tools"
 sbu = 0.1
 dir_pth = "base"
 patch = ["https://www.linuxfromscratch.org/patches/blfs/svn/wireless_tools-29-fix_iwlist_scanning-1.patch"]
+
+[[package]]
+id = "bootscripts"
+package = "LFA Bootscripts"
+sbu = 0.1
+dir_pth = "boot-files"

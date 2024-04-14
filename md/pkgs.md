@@ -13,6 +13,11 @@
 - Домашняя страница: <https://gmplib.org>
 - Скачать: <https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz>
 - MD5 сумма: `956dc04e864001a9c22429f761f2c283`
+## LFA Bootscripts-1.0
+Набор скриптов, используемых системой инициализации из BusyBox для запуска/остановки демонов и иных программ во время запуска/выключения LFA.
+- Домашняя страница: <https://github.com/Linux-for-ARM/lfa-bootscripts/>
+- Скачать: <https://github.com/Linux-for-ARM/lfa-bootscripts/releases/download/v1.0/bootscripts-1.0.tar.xz>
+- MD5 сумма: `217d8f3d253f980691129e1c251379fc`
 ## Linux-6.6.6
 Ядро операционной системы.
 - Домашняя страница: <https://www.kernel.org>

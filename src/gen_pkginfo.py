@@ -12,7 +12,8 @@ DIRS = {
 	"cross-compiler": Path("../md/cross-compiler/pkgs"),
 	"base": Path("../md/base/pkgs"),
 	"kernel": Path("../md/kernel/pkgs"),
-	"bootloader": Path("../md/bootloader/pkgs")
+	"bootloader": Path("../md/bootloader/pkgs"),
+	"boot-files": Path("../md/boot-files/pkgs")
 }
 
 packages = toml.load(PKGS_ALL)['package']
