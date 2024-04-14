@@ -12,3 +12,5 @@
   - <https://habr.com/ru/companies/aladdinrd/articles/338806/>
   - <https://wiki.gentoo.org/wiki/Comparison_of_init_systems>
   - <https://www.altlinux.org/Device_Tree>
+  - <https://smarden.org/runit/>
+  - <https://wiki.archlinux.org/title/Systemd_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)>
