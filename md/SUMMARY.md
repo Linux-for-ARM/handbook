@@ -73,6 +73,11 @@
   - [Device Tree](additional/dtb.md)
 - [Приложения](appendix/README.md)
   - [Список ПК, на которых собиралась LFA](appendix/computers.md)
+  - [Загрузочные скрипты и конфигурационные файлы](appendix/scripts/README.md)
+    - [`/etc/rc.d/shutdown`](appendix/scripts/rc.d-shutdown.md)
+    - [`/etc/rc.d/startup`](appendix/scripts/rc.d-startup.md)
+    - [`/etc/rc.d/init.d/functions`](appendix/scripts/rc.d-init.d-functions.md)
+    - [`/etc/rc.d/init.d/scripts/`](appendix/scripts.rc.d-scripts.md)
 - [Литература](literature.md)
 
 ---
