@@ -34,7 +34,7 @@ make PREFIX=$LFA_SYS
 ## Установка
 
 ```bash
-make install PREFIX=$LFA_SYS
+make PREFIX=$LFA_SYS install
 ```
 
 ~~~admonish note title="Содержимое пакета" collapsible=true
