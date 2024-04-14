@@ -2,20 +2,27 @@
 
 {{#include pkgs/bootscripts.md}}
 
-```admonish warning title="Внимание"
-Это заготовка страницы. Здесь приведены общие инструкции, тестирование которых не производилось. Окончательная версия страницы войдёт во вторую версию руководства LFA.
-```
-
 ## inittab
 
 Для начала создайте файл `/etc/inittab`, отвечающий за такие вещи как зарузка системы, её выключение и обработки поведения при нажатии комбинации <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>.
 
 ```bash
 cat >> $LFA_SYS/etc/inittab << "EOF"
-::sysinit:/etc/rc.d/rc.S
-::respawn:-/bin/sh -l
-::ctrlaltdel:/sbin/reboot 
-::shutdown:/etc/rc.d/rc.0
+# Begin /etc/inittab
+
+::sysinit:/etc/rc.d/startup
+
+tty1::respawn:/sbin/getty 38400 tty1
+tty2::respawn:/sbin/getty 38400 tty2
+tty3::respawn:/sbin/getty 38400 tty3
+tty4::respawn:/sbin/getty 38400 tty4
+tty5::respawn:/sbin/getty 38400 tty5
+tty6::respawn:/sbin/getty 38400 tty6
+
+::shutdown:/etc/rc.d/shutdown
+::ctrlaltdel:/sbin/reboot
+
+# End /etc/inittab
 EOF
 ```
 
