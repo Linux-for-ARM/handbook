@@ -14,3 +14,4 @@
   - <https://www.altlinux.org/Device_Tree>
   - <https://smarden.org/runit/>
   - <https://wiki.archlinux.org/title/Systemd_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)>
+  - <https://help.reg.ru/support/dns-servery-i-nastroyka-zony/rabota-s-dns-serverami/fayl-hosts-na-linux#0>
