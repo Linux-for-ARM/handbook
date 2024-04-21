@@ -33,11 +33,11 @@
 - Домашняя страница: <https://www.mpfr.org>
 - Скачать: <https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.1.tar.xz>
 - MD5 сумма: `523c50c6318dde6f9dc523bc0244690a`
-## TF-A-2.10.2
+## TF-A-2.10.3
 Проект Trusted Firmware-A предоставляет эталонную реализацию безопасного программного обеспечения для процессоров класса ARMv7-A и ARMv8-A.
 - Домашняя страница: <https://www.trustedfirmware.org/projects/tf-a/>
-- Скачать: <https://git.trustedfirmware.org/TF-A/trusted-firmware-a.git/snapshot/trusted-firmware-a-lts-v2.10.2.tar.gz>
-- MD5 сумма: `9d223fd5e7863ec223565c385f9a68ed`
+- Скачать: <https://github.com/Linux-for-ARM/packages/raw/master/tf-a/trusted-firmware-a.git-refs_tags_lts-v2.10.3.tar.gz>
+- MD5 сумма: `f8cf23ca23d6de58ff713bbbf87372fd`
 ## Wireless Tools-29
 Набор инструментов для работы с Wireless Extensions (WE — API ядра Linux, позволяющий драйверу передавать в пользовательское пространство конфигурацию и статистику, характерные для беспроводных локальных сетей).
 - Домашняя страница: <https://hewlettpackard.github.io/wireless-tools/>
@@ -48,6 +48,11 @@
 - Домашняя страница: <https://www.gnu.org/software/binutils>
 - Скачать: <https://sourceware.org/pub/binutils/releases/binutils-2.42.tar.xz>
 - MD5 сумма: `a075178a9646551379bfb64040487715`
+## crust-0.6
+Низкоуровневый компонент для плат на базе Allwinner, предназначенный для уравления питанием. Во время глубокого сна ядра процессора, контроллер DRAM и большинство встроенных периферийных устройств отключаются от питания, что позволяет снизить электропотребление на >80%. На платах без PMIC crust также отвечает за упорядоченное включение и выключение устройства.
+- Домашняя страница: <https://github.com/crust-firmware/crust>
+- Скачать: <https://github.com/Linux-for-ARM/packages/raw/master/crust/crust-0.6.tar.gz>
+- MD5 сумма: `e558d2365411c82d0393e47e57aa7bea`
 ## iana-etc-20240125
 Данные для сетевых служб и сервисов. Необходим для обеспечения надлежащих сетевых возможностей.
 - Домашняя страница: <https://www.iana.org/protocols>

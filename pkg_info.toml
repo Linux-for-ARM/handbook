@@ -101,3 +101,9 @@ id = "bootscripts"
 package = "LFA Bootscripts"
 sbu = 0.1
 dir_pth = "boot-files"
+
+[[package]]
+id = "crust"
+package = "crust"
+sbu = 0.3
+dir_pth = "bootloader"
