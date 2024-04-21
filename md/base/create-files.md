@@ -21,6 +21,11 @@ mkdir -pv $LFA_SYS/usr/{,local/}{bin,include,lib,sbin,share,src}
 
 install -dv -m 0750 $LFA_SYS/root
 install -dv -m 1777 $LFA_SYS/{var/,}tmp
+
+if [ $LFA_TGT == "aarch64-linux-musleabihf" ]; then
+    mkdir -pv $LFA_SYS/lib64
+    mkdir -pv $LFA_SYS/usr/lib64
+fi
 ```
 
 ~~~admonish tip title="Проверьте себя" collapsible=true
