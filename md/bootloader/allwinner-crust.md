@@ -5,10 +5,10 @@
 ## Настройка
 
 ```bash
-make <ваша мат.плата>_defconfig
+make <имя платы>_defconfig
 ```
 
-> Список поддерживаемых материнских плат смотрите в директории [`configs/`](https://github.com/crust-firmware/crust/tree/master/configs). Прочитайте также [**README**](https://github.com/crust-firmware/crust/blob/master/README.md#building-the-firmware)-файл из репозитория crust для получения дополнительных сведений о процессе сборки этой микропрограммы.
+> Список поддерживаемых материнских плат смотрите в директории [`configs/`](https://github.com/crust-firmware/crust/tree/master/configs). Например, для Orange Pi 3 замените `<имя платы>` на `orangepi_3`. Прочитайте также [**README**](https://github.com/crust-firmware/crust/blob/master/README.md#building-the-firmware)-файл из репозитория crust для получения дополнительных сведений о процессе сборки этой микропрограммы.
 
 ## Сборка
 
