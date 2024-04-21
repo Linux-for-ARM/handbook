@@ -7,8 +7,7 @@
 Установите имя аргумента `qemu_*_defconfig` в зависимости от архитектуры, для которой вы собираете:
 
 ```bash
-if [ $LFA_TGT -eq "aarch64-linux-musleabihf" ]
-then
+if [ $LFA_TGT == "aarch64-linux-musleabihf" ]; then
   QEMU_ARCH="arm64"
 else
   QEMU_ARCH="arm"
