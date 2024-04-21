@@ -2,15 +2,15 @@
 
 {{#include pkgs/libgcc.md}}
 
-## Установка
+## Подготовка
 
-Скопируйте библиотеку в директорию собираемой ОС:
+Объявите переменную окружения `LGCC_LIB`, которая будет содержать имя директории `lib{,64}`, в которой содержится необходимая нам библиотека (в зависимости от архитектуры название этой директории различается):
 
 ```bash
 if [ $LFA_TGT == "aarch64-linux-musleabihf" ]; then
-  cp -v $LFA_CROSS/lib64/libgcc_s.so.1 $LFA_SYS/lib64
+  LGCC_LIB="lib64"
 else
-  cp -v $LFA_CROSS/lib/libgcc_s.so.1 $LFA_SYS/lib
+  LGCC_LIB="lib"
 fi
 ```
 
@@ -18,10 +18,24 @@ fi
 >
 > `if [ $LFA_TGT == "aarch64-linux-musleabihf" ]; then ...` — если вы собираете систему для 64-битной архитектуры, то нужная библиотека содержится в каталоге `$LFA_CROSS/lib64`. А для 32-битных архитектур семейства ARM нужная библиотека содержится в `$LFA_CROSS/lib`. В зависимости от целевой архитектуры мы вибираем, откуда копировать `libgcc_s.so.1` и куда.
 
+## Установка
+
+Скопируйте библиотеку в директорию собираемой ОС:
+
+```bash
+cp -v $LFA_CROSS/$LGCC_LIB/libgcc_s.so.1 $LFA_SYS/$LGCC_LIB
+```
+
 Удалите из установленной библиотеки лишние для вас отладочные символы:
 
 ```bash
-$STRIP $LFA_SYS/lib/libgcc_s.so.1
+$STRIP $LFA_SYS/$LGCC_LIB/libgcc_s.so.1
+```
+
+Переменная `LGCC_LIB` нам больше не нужна, удалите её:
+
+```bash
+unset LGCC_LIB
 ```
 
 ~~~admonish note title="Содержимое пакета" collapsible=true
