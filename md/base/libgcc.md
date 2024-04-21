@@ -7,8 +7,16 @@
 Скопируйте библиотеку в директорию собираемой ОС:
 
 ```bash
-cp $LFA_CROSS/lib64/libgcc_s.so.1 $LFA_SYS/lib
+if [ $LFA_TGT == "aarch64-linux-musleabihf" ]; then
+  cp -v $LFA_CROSS/lib64/libgcc_s.so.1 $LFA_SYS/lib64
+else
+  cp -v $LFA_CROSS/lib/libgcc_s.so.1 $LFA_SYS/lib
+fi
 ```
+
+> **Объяснение новых команд:**
+>
+> `if [ $LFA_TGT == "aarch64-linux-musleabihf" ]; then ...` — если вы собираете систему для 64-битной архитектуры, то нужная библиотека содержится в каталоге `$LFA_CROSS/lib64`. А для 32-битных архитектур семейства ARM нужная библиотека содержится в `$LFA_CROSS/lib`. В зависимости от целевой архитектуры мы вибираем, откуда копировать `libgcc_s.so.1` и куда.
 
 Удалите из установленной библиотеки лишние для вас отладочные символы:
 
