@@ -2,6 +2,10 @@
 
 {{#include pkgs/crust.md}}
 
+```admonish warning title="Внимание"
+Сборка пакета осуществляется с помощью кросс-компилятора `or1k-none-elf`.
+```
+
 ## Настройка
 
 ```bash
