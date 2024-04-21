@@ -57,6 +57,10 @@ export BL31=$PWD/build/$PLAT/debug/bl31.bin
 unset PLAT
 ```
 
+```admonish warning title="Внимание"
+Не удаляйте эту директорию с исходным кодом TF-A (в которой вы его собирали) до тех пор, пока не соберёте загрузчик U-Boot!
+```
+
 ~~~admonish note title="Содержимое пакета" collapsible=true
 - **Установленные файлы:** `$PWD/build/$PLAT/debug/bl31.bin`
 
