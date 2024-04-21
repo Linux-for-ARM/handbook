@@ -1,6 +1,28 @@
 # Эмуляция в QEMU (ARM)
 
-## ACPI в QEMU
+{{#include pkgs/u-boot.md}}
+
+## Настройка U-Boot
+
+Установите имя аргумента `qemu_*_defconfig` в зависимости от архитектуры, для которой вы собираете:
+
+```bash
+if [ $LFA_TGT -eq "aarch64-linux-musleabihf" ]
+then
+  QEMU_ARCH="arm64"
+else
+  QEMU_ARCH="arm"
+fi
+```
+
+Сконфигурируйте пакет U-Boot:
+
+```bash
+make CROSS_COMPILE=$LFA_TGT- \
+  qemu_${QEMU_ARCH}_defconfig
+```
+
+### ACPI в QEMU
 
 QEMU (начиная с версии v8.0.0) может предоставлять таблицы ACPI для ARM. Для их поддержки нужны следующие настройки U-Boot:
 
@@ -15,6 +37,39 @@ CONFIG_GENERATE_ACPI_TABLE=y
 ```bash
 make orangepi-3_defconfig acpi.config
 ```
+
+## Сборка
+
+```bash
+make
+```
+
+## Запуск U-Boot
+
+Минимальная команда для запуска эмулятора QEMU с загрузчиком U-Boot выглядит так:
+
+- для AArch64:
+
+```bash
+qemu-system-aarch64 -machine virt \
+  -nographic \
+  -cpu cortex-a57 \
+  -bios u-boot.bin
+```
+
+- для других архитектур семейства ARM:
+
+```bash
+qemu-system-arm -machine virt \
+  -nographic \
+  -bios u-boot.bin
+```
+
+> **Объяснение новых значений:**
+>
+> `-nographic` — обеспечивает вывод данных в терминал;
+>
+> `-cpu cortex-a57` — по какой-то странной причине программе `qemu-system-aarch64` необходимо явно указать использование 64-битного процессора, иначе эмулятор запустится в 32-битном режиме.
 
 ## Эмуляция блочных устройств
 
@@ -67,59 +122,6 @@ QEMU для ARM поддерживает специальную виртуаль
 Кроме того, к PCI шине можно подключить ряд дополнительных периферийных устройств.
 
 См. раздел [**Devicetree in QEMU**](https://docs.u-boot.org/en/latest/develop/devicetree/dt_qemu.html) в документации U-Boot для получения информации о том, как увидеть дерево устройств, фактически сгенерированное QEMU.
-
-## Настройка U-Boot
-
-Установите имя аргумента `qemu_*_defconfig` в зависимости от архитектуры, для которой вы собираете:
-
-```bash
-if [ $LFA_TGT -eq "aarch64-linux-musleabihf" ]
-then
-  QEMU_ARCH="arm64"
-else
-  QEMU_ARCH="arm"
-fi
-```
-
-Сконфигурируйте пакет U-Boot:
-
-```bash
-make CROSS_COMPILE=$LFA_TGT- \
-  qemu_${QEMU_ARCH}_defconfig
-```
-
-## Сборка
-
-```bash
-make
-```
-
-## Запуск U-Boot
-
-Минимальная команда для запуска эмулятора QEMU с загрузчиком U-Boot выглядит так:
-
-- для AArch64:
-
-```bash
-qemu-system-aarch64 -machine virt \
-  -nographic \
-  -cpu cortex-a57 \
-  -bios u-boot.bin
-```
-
-- для других архитектур семейства ARM:
-
-```bash
-qemu-system-arm -machine virt \
-  -nographic \
-  -bios u-boot.bin
-```
-
-> **Объяснение новых значений:**
->
-> `-nographic` — обеспечивает вывод данных в терминал;
->
-> `-cpu cortex-a57` — по какой-то странной причине программе `qemu-system-aarch64` необходимо явно указать использование 64-битного процессора, иначе эмулятор запустится в 32-битном режиме.
 
 ---
 
