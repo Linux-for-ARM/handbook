@@ -40,7 +40,7 @@ make orangepi-3_defconfig acpi.config
 ## Сборка
 
 ```bash
-make
+make CROSS_COMPILE=$LFA_TGT-
 ```
 
 ## Запуск U-Boot
