@@ -22,7 +22,13 @@ gzip initramfs.cpio
 Создайте образ `uImage` с помощью программы `mkimage`:
 
 ```bash
-mkimage -A arm64 -T ramdisk -n uInitrd -d initramfs.cpio.gz uImage
+mkimage -A arm64 -T ramdisk -n uInitrd -d initramfs.cpio.gz uInitrd
+```
+
+И скопируйте его в `$LFA_SYS/boot`:
+
+```bash
+cp -v uInitrd $LFA_SYS/boot
 ```
 
 ---
