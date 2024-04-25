@@ -7,7 +7,8 @@
 Установите имя аргумента `qemu_*_defconfig` в зависимости от архитектуры, для которой вы собираете:
 
 ```bash
-if [ $LFA_TGT == "aarch64-linux-musleabihf" ]; then
+if [ $LFA_TGT == "aarch64-linux-musleabihf" ]
+then
   QEMU_ARCH="arm64"
 else
   QEMU_ARCH="arm"
@@ -126,4 +127,4 @@ QEMU для ARM поддерживает специальную виртуаль
 
 > **Смотрите также:**
 >
-> - [QEMU ARM — Das U-Boot](https://docs.u-boot.org/en/latest/board/emulation/qemu-arm.html) (<https://docs.u-boot.org/en/latest/>).
+> - [**QEMU ARM — Das U-Boot**](https://docs.u-boot.org/en/latest/board/emulation/qemu-arm.html) (<https://docs.u-boot.org/en/latest/>).

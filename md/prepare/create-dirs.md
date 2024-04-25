@@ -17,6 +17,7 @@ echo "export LFA_CROSS=\$LFA/tools/\$LFA_TGT" >> ~/.bashrc
 mkdir -v src
 ```
 
+~~~admonish tip title="Проверьте себя" collapsible=true
 В итоге в домашней папке пользователя `lfa` будет примерно такая структура файлов:
 
 ```
@@ -43,3 +44,4 @@ export LFA_TGT="aarch64-linux-musleabihf"
 export LFA_ARCH="armv8-a"
 export LFA_CROSS=$LFA/tools/$LFA_TGT
 ```
+~~~

@@ -66,5 +66,5 @@ unset PLAT
 
 ### Описание компонентов
 
-- `$PWD/build/$PLAT/debug/bl31.bin` - требуемый для сборки U-Boot компонент TF-A.
+- `$PWD/build/$PLAT/debug/bl31.bin` — требуемый для сборки U-Boot компонент TF-A.
 ~~~

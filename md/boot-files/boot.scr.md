@@ -27,5 +27,9 @@ EOF
 Скомпилируйте этот файл:
 
 ```bash
-mkimage -C none -A arm -T script -d $LFA_SYS/boot/boot.cmd $LFA_SYS/boot/boot.scr
+mkimage -C none \
+  -A arm \
+  -T script \
+  -d $LFA_SYS/boot/boot.cmd \
+  $LFA_SYS/boot/boot.scr
 ```
