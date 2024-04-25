@@ -24,5 +24,5 @@ EOF
 
 > **Смотрите также:**
 >
-> - [**Файл `hosts` в Linux**](https://losst.pro/fajl-hosts-v-linux); <https://losst.pro>
+> - [**Файл `hosts` в Linux**](https://losst.pro/fajl-hosts-v-linux) (<https://losst.pro>);
 > - man: `hosts(5)`;
