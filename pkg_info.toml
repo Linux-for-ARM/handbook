@@ -107,3 +107,9 @@ id = "crust"
 package = "crust"
 sbu = 0.3
 dir_pth = "bootloader"
+
+[[package]]
+id = "rkbin"
+package = "rkbin"
+sbu = 0
+dir_pth = "bootloader"

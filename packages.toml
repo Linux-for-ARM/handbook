@@ -106,3 +106,10 @@ home_page = "https://github.com/crust-firmware/crust"
 download = "https://raw.githubusercontent.com/Linux-for-ARM/packages/master/crust/crust-0.6.tar.gz"
 # download = "https://github.com/Linux-for-ARM/packages/raw/master/crust/crust-0.6.tar.gz"
 md5 = "e558d2365411c82d0393e47e57aa7bea"
+
+[package.rkbin]
+version = "git"
+description = "Прошивка BL31 для тех Rockchip SoC, для которых не обеспечена поддержка BL31 из состава TF-A."
+home_page = "https://github.com/rockchip-linux/rkbin"
+download = ""
+md5 = ""
