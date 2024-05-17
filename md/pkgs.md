@@ -63,11 +63,11 @@
 - Домашняя страница: <https://musl.libc.org>
 - Скачать: <https://musl.libc.org/releases/musl-1.2.5.tar.gz>
 - MD5 сумма: `ac5cfde7718d0547e224247ccfe59f18`
-## rkbin-git
+## rkbin-master
 Прошивка BL31 для тех Rockchip SoC, для которых не обеспечена поддержка BL31 из состава TF-A.
 - Домашняя страница: <https://github.com/rockchip-linux/rkbin>
-- Скачать: <>
-- MD5 сумма: ``
+- Скачать: <https://raw.githubusercontent.com/Linux-for-ARM/packages/master/rkbin/rkbin-master.tar.xz>
+- MD5 сумма: `ad190429dc735449487d494f4696823f`
 ## u-boot-2023.10
 Загрузчик операционной системы, предназначенный для встраиваемых систем на MIPS, ARM, PowerPC и т.д.
 - Домашняя страница: <https://source.denx.de/u-boot/u-boot>

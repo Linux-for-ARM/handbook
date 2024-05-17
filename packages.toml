@@ -108,8 +108,8 @@ download = "https://raw.githubusercontent.com/Linux-for-ARM/packages/master/crus
 md5 = "e558d2365411c82d0393e47e57aa7bea"
 
 [package.rkbin]
-version = "git"
+version = "master"
 description = "Прошивка BL31 для тех Rockchip SoC, для которых не обеспечена поддержка BL31 из состава TF-A."
 home_page = "https://github.com/rockchip-linux/rkbin"
-download = ""
-md5 = ""
+download = "https://raw.githubusercontent.com/Linux-for-ARM/packages/master/rkbin/rkbin-master.tar.xz"
+md5 = "ad190429dc735449487d494f4696823f"
