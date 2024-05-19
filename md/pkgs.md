@@ -36,7 +36,7 @@
 ## TF-A-2.10.3
 Проект Trusted Firmware-A предоставляет эталонную реализацию безопасного программного обеспечения для процессоров класса ARMv7-A и ARMv8-A.
 - Домашняя страница: <https://www.trustedfirmware.org/projects/tf-a/>
-- Скачать: <https://raw.githubusercontent.com/Linux-for-ARM/packages/master/tf-a/trusted-firmware-a.git-refs_tags_lts-v2.10.3.tar.gz>
+- Скачать: <https://raw.githubusercontent.com/Linux-for-ARM/packages/v1.0/tf-a/trusted-firmware-a.git-refs_tags_lts-v2.10.3.tar.gz>
 - MD5 сумма: `f8cf23ca23d6de58ff713bbbf87372fd`
 ## Wireless Tools-29
 Набор инструментов для работы с Wireless Extensions (WE — API ядра Linux, позволяющий драйверу передавать в пользовательское пространство конфигурацию и статистику, характерные для беспроводных локальных сетей).
@@ -51,7 +51,7 @@
 ## crust-0.6
 Низкоуровневый компонент для плат на базе Allwinner, предназначенный для уравления питанием. Во время глубокого сна ядра процессора, контроллер DRAM и большинство встроенных периферийных устройств отключаются от питания, что позволяет снизить электропотребление на >80%. На платах без PMIC crust также отвечает за упорядоченное включение и выключение устройства.
 - Домашняя страница: <https://github.com/crust-firmware/crust>
-- Скачать: <https://raw.githubusercontent.com/Linux-for-ARM/packages/master/crust/crust-0.6.tar.gz>
+- Скачать: <https://raw.githubusercontent.com/Linux-for-ARM/packages/v1.0/crust/crust-0.6.tar.gz>
 - MD5 сумма: `e558d2365411c82d0393e47e57aa7bea`
 ## iana-etc-20240125
 Данные для сетевых служб и сервисов. Необходим для обеспечения надлежащих сетевых возможностей.
@@ -66,7 +66,7 @@
 ## rkbin-master
 Прошивка BL31 для тех Rockchip SoC, для которых не обеспечена поддержка BL31 из состава TF-A.
 - Домашняя страница: <https://github.com/rockchip-linux/rkbin>
-- Скачать: <https://raw.githubusercontent.com/Linux-for-ARM/packages/master/rkbin/rkbin-master.tar.xz>
+- Скачать: <https://raw.githubusercontent.com/Linux-for-ARM/packages/v1.0/rkbin/rkbin-master.tar.xz>
 - MD5 сумма: `ad190429dc735449487d494f4696823f`
 ## u-boot-2023.10
 Загрузчик операционной системы, предназначенный для встраиваемых систем на MIPS, ARM, PowerPC и т.д.
