@@ -4,7 +4,7 @@ a075178a9646551379bfb64040487715  binutils-2.42.tar.xz
 e0e48554cc6e4f261d55ddee9ab69075  gcc-13.2.0.tar.xz
 956dc04e864001a9c22429f761f2c283  gmp-6.3.0.tar.xz
 aed66d04de615d76c70890233081e584  iana-etc-20240125.tar.gz
-dd66281fed9b76c08dc8b72eb76df96f  linux-6.6.6.tar.xz
+b9828ed78dae306e3d90643cd5cdb8f1  linux-6.9.tar.xz
 5c9bc658c9fd0f940e8e3e0f09530c62  mpc-1.3.1.tar.gz
 523c50c6318dde6f9dc523bc0244690a  mpfr-4.2.1.tar.xz
 ac5cfde7718d0547e224247ccfe59f18  musl-1.2.5.tar.gz
@@ -12,3 +12,4 @@ ac5cfde7718d0547e224247ccfe59f18  musl-1.2.5.tar.gz
 f8cf23ca23d6de58ff713bbbf87372fd  trusted-firmware-a.git-refs_tags_lts-v2.10.3.tar.gz
 e06c222e186f7cc013fd272d023710cb  wireless_tools.29.tar.gz
 e558d2365411c82d0393e47e57aa7bea  crust-0.6.tar.gz
+ad190429dc735449487d494f4696823f  rkbin-master.tar.xz

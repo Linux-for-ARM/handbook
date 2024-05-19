@@ -18,11 +18,11 @@
 - Домашняя страница: <https://github.com/Linux-for-ARM/lfa-bootscripts/>
 - Скачать: <https://github.com/Linux-for-ARM/lfa-bootscripts/releases/download/v1.0/bootscripts-1.0.tar.xz>
 - MD5 сумма: `217d8f3d253f980691129e1c251379fc`
-## Linux-6.6.6
+## Linux-6.9
 Ядро операционной системы.
 - Домашняя страница: <https://www.kernel.org>
-- Скачать: <https://www.kernel.org/pub/linux/kernel/v6.x/linux-6.6.6.tar.xz>
-- MD5 сумма: `dd66281fed9b76c08dc8b72eb76df96f`
+- Скачать: <https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.tar.xz>
+- MD5 сумма: `b9828ed78dae306e3d90643cd5cdb8f1`
 ## MPC-1.3.1
 Математические функции для комплексных чисел. Необходим для сборки GCC.
 - Домашняя страница: <http://www.multiprecision.org/>
