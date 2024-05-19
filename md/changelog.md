@@ -14,8 +14,6 @@
 
 Initial Release
 
-## Обновления пакетов
+## 20.05.2024
 
-## 01.01.1970
-
-- [Выпущен релиз 1.0]()
+- [Выпущен релиз 1.0](https://github.com/Linux-for-ARM/handbook/releases/tag/releases/v1.0)
