@@ -8,7 +8,7 @@ title = "Linux for ARM"
 [output.html]
 preferred-dark-theme = "ayu"
 git-repository-url = "https://github.com/linux-for-arm/handbook"
-edit-url-template = "https://github.com/linux-for-arm/handbook/edit/v1.0/{path}"
+edit-url-template = "https://github.com/linux-for-arm/handbook/edit/master/{path}"
 git-repository-icon = "fa-github"
 input-404 = "404.md"
 additional-css = ["././mdbook-admonish.css", "././1.css", "./mdbook-admonish.css"]
