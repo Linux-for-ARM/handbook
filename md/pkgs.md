@@ -6,8 +6,8 @@
 ## GCC-13.2.0
 Набор компиляторов GNU GCC.
 - Домашняя страница: <https://gcc.gnu.org>
-- Скачать: <https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz>
-- MD5 сумма: `e0e48554cc6e4f261d55ddee9ab69075`
+- Скачать: <https://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz>
+- MD5 сумма: `24195dca80ded5e0551b533f46a4481d`
 ## GMP-6.3.0
 Пакет с математическими библиотеками, которые предоставляют полезные функции для арифметики произвольной точности. Необходим для сборки GCC.
 - Домашняя страница: <https://gmplib.org>
@@ -21,8 +21,8 @@
 ## Linux-6.9
 Ядро операционной системы.
 - Домашняя страница: <https://www.kernel.org>
-- Скачать: <https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.tar.xz>
-- MD5 сумма: `b9828ed78dae306e3d90643cd5cdb8f1`
+- Скачать: <https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.1.tar.xz>
+- MD5 сумма: `2d28c79862fa9b75c64d1ac612c310fc`
 ## MPC-1.3.1
 Математические функции для комплексных чисел. Необходим для сборки GCC.
 - Домашняя страница: <http://www.multiprecision.org/>
@@ -56,8 +56,8 @@
 ## iana-etc-20240125
 Данные для сетевых служб и сервисов. Необходим для обеспечения надлежащих сетевых возможностей.
 - Домашняя страница: <https://www.iana.org/protocols>
-- Скачать: <https://github.com/Mic92/iana-etc/releases/download/20240125/iana-etc-20240125.tar.gz>
-- MD5 сумма: `aed66d04de615d76c70890233081e584`
+- Скачать: <https://github.com/Mic92/iana-etc/releases/download/20240502/iana-etc-20240502.tar.gz>
+- MD5 сумма: `73921d46a934eb5ac4286fc8111c2174`
 ## musl-1.2.5
 Минималистичная стандартная библиотека языка С.
 - Домашняя страница: <https://musl.libc.org>
@@ -71,5 +71,5 @@
 ## u-boot-2023.10
 Загрузчик операционной системы, предназначенный для встраиваемых систем на MIPS, ARM, PowerPC и т.д.
 - Домашняя страница: <https://source.denx.de/u-boot/u-boot>
-- Скачать: <https://source.denx.de/u-boot/u-boot/-/archive/v2023.10/u-boot-v2023.10.tar.bz2>
-- MD5 сумма: `3491cd4aa6c52a7c77f7f626d4df9442`
+- Скачать: <https://source.denx.de/u-boot/u-boot/-/archive/v2024.04/u-boot-v2024.04.tar.bz2>
+- MD5 сумма: `7267d5902ea37ee56e71162a53b331df`

@@ -26,8 +26,8 @@ md5 = "0fc591bc9f4e365dfd9ade0014f32561"
 version = "13.2.0"
 description = "Набор компиляторов GNU GCC."
 home_page = "https://gcc.gnu.org"
-download = "https://ftp.gnu.org/gnu/gcc/gcc-13.2.0/gcc-13.2.0.tar.xz"
-md5 = "e0e48554cc6e4f261d55ddee9ab69075"
+download = "https://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.xz"
+md5 = "24195dca80ded5e0551b533f46a4481d"
 
 [package.GMP]
 version = "6.3.0"
@@ -40,15 +40,15 @@ md5 = "956dc04e864001a9c22429f761f2c283"
 version = "20240125"
 description = "Данные для сетевых служб и сервисов. Необходим для обеспечения надлежащих сетевых возможностей."
 home_page = "https://www.iana.org/protocols"
-download = "https://github.com/Mic92/iana-etc/releases/download/20240125/iana-etc-20240125.tar.gz"
-md5 = "aed66d04de615d76c70890233081e584"
+download = "https://github.com/Mic92/iana-etc/releases/download/20240502/iana-etc-20240502.tar.gz"
+md5 = "73921d46a934eb5ac4286fc8111c2174"
 
 [package.Linux]
 version = "6.9"
 description = "Ядро операционной системы."
 home_page = "https://www.kernel.org"
-download = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.tar.xz"
-md5 = "b9828ed78dae306e3d90643cd5cdb8f1"
+download = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.1.tar.xz"
+md5 = "2d28c79862fa9b75c64d1ac612c310fc"
 
 [package.MPC]
 version = "1.3.1"
@@ -82,8 +82,8 @@ md5 = "ac5cfde7718d0547e224247ccfe59f18"
 version = "2023.10"
 description = "Загрузчик операционной системы, предназначенный для встраиваемых систем на MIPS, ARM, PowerPC и т.д."
 home_page = "https://source.denx.de/u-boot/u-boot"
-download = "https://source.denx.de/u-boot/u-boot/-/archive/v2023.10/u-boot-v2023.10.tar.bz2"
-md5 = "3491cd4aa6c52a7c77f7f626d4df9442"
+download = "https://source.denx.de/u-boot/u-boot/-/archive/v2024.04/u-boot-v2024.04.tar.bz2"
+md5 = "7267d5902ea37ee56e71162a53b331df"
 
 [package.TF-A]
 version = "2.10.3"
