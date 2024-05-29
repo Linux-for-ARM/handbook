@@ -12,7 +12,10 @@
 
 ## Изменения
 
-- [Добавил недостающие пакеты в список необходимого для сборки ПО ()#53)](https://github.com/Linux-for-ARM/handbook/pull/53)
+- [Отключил сборку BusyBox с поддержкой PAM (#60)](https://github.com/Linux-for-ARM/handbook/pull/60)
+- [Отключил `tc` при сборке BusyBox (#59)](https://github.com/Linux-for-ARM/handbook/pull/59)
+- [Добавил `flex` в список необходимых пакетов (#58)](https://github.com/Linux-for-ARM/handbook/pull/58)
+- [Добавил недостающие пакеты в список необходимого для сборки ПО (#53)](https://github.com/Linux-for-ARM/handbook/pull/53)
 
 ## Обновления
 
