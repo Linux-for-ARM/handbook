@@ -74,6 +74,17 @@ sed -i 's/\(CONFIG_UDPSVD\)=y/# \1 is not set/' .config
 sed -i 's/\(CONFIG_TCPSVD\)=y/# \1 is not set/' .config
 ```
 
+Сборка компонента `tc` на ядрах Linux >= 6.8 вызывает ошибку. Отключите сборку `tc` если он вам не нужен:
+
+```bash
+sed -i 's/\(CONFIG_TC\)=y/# \1 is not set/' .config
+```
+
+~~~admonish tip title="Если вам нужен `tc`" collapsible=true
+- Примените [**патч**](https://gitweb.gentoo.org/repo/gentoo.git/tree/sys-apps/busybox/files/busybox-1.36.1-kernel-6.8.patch?id=d8ad860a1ed9aa92adaa7dcf1c3fc78d0e2f80ce);
+- [**Обсуждение на** *lists.busybox.net*](http://lists.busybox.net/pipermail/busybox-cvs/2024-January/041752.html);
+~~~
+
 Обычно в системах подобных LFA не требуются пакетные менеджеры типа того же `dpkg`. К тому же, в BusyBox предоставляется достаточно «обрезанная» версия dpkg с некоторыми ограничениями. Да и подобных LFS руководствах (в том числе и в LFA) не рекомендуется использовать подобные пакетные менеджеры во избежание проблем и поломок системы. Если вам не нужен `dpkg`, отключите его сборку, чем освободите около 73 Кб памяти:
 
 ```bash
