@@ -16,7 +16,7 @@
 ## LFA Bootscripts-1.0
 Набор скриптов, используемых системой инициализации из BusyBox для запуска/остановки демонов и иных программ во время запуска/выключения LFA.
 - Домашняя страница: <https://github.com/Linux-for-ARM/lfa-bootscripts/>
-- Скачать: <https://github.com/Linux-for-ARM/lfa-bootscripts/releases/download/master/bootscripts-1.0.tar.xz>
+- Скачать: <https://github.com/Linux-for-ARM/lfa-bootscripts/releases/download/v1.0/bootscripts-1.0.tar.xz>
 - MD5 сумма: `217d8f3d253f980691129e1c251379fc`
 ## Linux-6.9
 Ядро операционной системы.
