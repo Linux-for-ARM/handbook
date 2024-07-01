@@ -12,6 +12,7 @@
 
 ## Изменения
 
+- [Исправил нерабочую ссылку на LFA Bootscripts (#61)](https://github.com/Linux-for-ARM/handbook/pull/61)
 - [Отключил сборку BusyBox с поддержкой PAM (#60)](https://github.com/Linux-for-ARM/handbook/pull/60)
 - [Отключил `tc` при сборке BusyBox (#59)](https://github.com/Linux-for-ARM/handbook/pull/59)
 - [Добавил `flex` в список необходимых пакетов (#58)](https://github.com/Linux-for-ARM/handbook/pull/58)
