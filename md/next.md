@@ -19,8 +19,6 @@
 
 <details>
   <summary><b>Ну и конечно же вы можете отблагодарить автора за проделанную работу...</b></summary>
-  <p>... отправив ему донат на карту:</p>
-  <blockquote><div align="center"><p>2202 2062 5233 5406 (Сбербанк)</p></div></blockquote>
-  <p>... или подписавшись на его Boosty:</p>
+  <p>... подписавшись на его Boosty:</p>
   <blockquote><div align="center"><p><b><a href="https://boosty.to/linux-for-arm/donate">https://boosty.to/linux-for-arm/donate</a></b></p></div></blockquote>
 </details>
