@@ -35,5 +35,5 @@ mdbook serve --open
 <details>
   <summary><b>Донат</b></summary>
   <p>Вы можете отблагодарить автора за проделанную работу:</p>
-  <blockquote>2202 2062 5233 5406 (Сбербанк)</blockquote>
+  <blockquote><a href="https://boosty.to/linux-for-arm/donate">https://boosty.to/linux-for-arm</a></blockquote>
 </details>
