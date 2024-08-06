@@ -20,6 +20,9 @@
 
 ## Обновления
 
+- [Обновления от 06.08.2024](https://github.com/Linux-for-ARM/handbook/commit/048ca618307d92f209ea92de8ba4f920bb44f3f2)
+  - Linux 6.6 -> 6.1.103 (понизил до LTS-версии, поддерживаемой до декабря 2026)
+
 - [Обновления от 26.05.2024](https://github.com/Linux-for-ARM/handbook/pull/54)
   - GCC 13.2.0 -> 14.1.0;
   - iana-etc 20240125 -> 20240502;
