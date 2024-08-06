@@ -18,7 +18,7 @@
 - Домашняя страница: <https://github.com/Linux-for-ARM/lfa-bootscripts/>
 - Скачать: <https://github.com/Linux-for-ARM/lfa-bootscripts/releases/download/v1.0/bootscripts-1.0.tar.xz>
 - MD5 сумма: `217d8f3d253f980691129e1c251379fc`
-## Linux-6.9
+## Linux-6.1.103
 Ядро операционной системы.
 - Домашняя страница: <https://www.kernel.org>
 - Скачать: <https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.103.tar.xz>
