@@ -21,8 +21,8 @@
 ## Linux-6.9
 Ядро операционной системы.
 - Домашняя страница: <https://www.kernel.org>
-- Скачать: <https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.1.tar.xz>
-- MD5 сумма: `2d28c79862fa9b75c64d1ac612c310fc`
+- Скачать: <https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.103.tar.xz>
+- MD5 сумма: `9891c7d4ce481025b0d792b9d57911af`
 ## MPC-1.3.1
 Математические функции для комплексных чисел. Необходим для сборки GCC.
 - Домашняя страница: <http://www.multiprecision.org/>

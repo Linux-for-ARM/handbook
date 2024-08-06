@@ -2,7 +2,7 @@
 
 > - **Автор(ы):** [Pelmen Zharenny](https://github.com/mskrasnov)
 > - **Связаться с автором:** [Telegram](https://t.me/brezhnev_zhiv)
-> - **Версия LFA:** 1.0
+> - **Версия LFA:** 1.1
 
 Linux for ARM (далее — *LFA*) — подробное руководство по сборке Linux-системы из исходного кода для компьютеров на архитектуре ARM[^1].
 
