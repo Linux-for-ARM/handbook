@@ -1,12 +1,12 @@
 # Содержит список пакетов и информацию о каждом из них
 
 [package.binutils]
-version = "2.42"
+version = "2.43"
 description = "Этот пакет содержит компоновщик, ассемблер и другие утилиты для работы с объектными файлами."
 home_page = "https://www.gnu.org/software/binutils"
 # download = "http://ftp.gnu.org/gnu/binutils/binutils-2.27.tar.bz2"
-download = "https://sourceware.org/pub/binutils/releases/binutils-2.42.tar.xz"
-md5 = "a075178a9646551379bfb64040487715"
+download = "https://sourceware.org/pub/binutils/releases/binutils-2.43.tar.xz"
+md5 = "a54bb52cd75555416f316fbbe885925a"
 
 [package."LFA Bootscripts"]
 version = "1.0"
