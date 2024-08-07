@@ -44,11 +44,11 @@ download = "https://github.com/Mic92/iana-etc/releases/download/20240502/iana-et
 md5 = "73921d46a934eb5ac4286fc8111c2174"
 
 [package.Linux]
-version = "6.1.103"
+version = "6.6.44"
 description = "Ядро операционной системы."
 home_page = "https://www.kernel.org"
-download = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.103.tar.xz"
-md5 = "9891c7d4ce481025b0d792b9d57911af"
+download = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.44.tar.xz"
+md5 = "613b7d75598dbf359b180c11acac39cc"
 
 [package.MPC]
 version = "1.3.1"
