@@ -18,11 +18,11 @@
 - Домашняя страница: <https://github.com/Linux-for-ARM/lfa-bootscripts/>
 - Скачать: <https://github.com/Linux-for-ARM/lfa-bootscripts/releases/download/v1.0/bootscripts-1.0.tar.xz>
 - MD5 сумма: `217d8f3d253f980691129e1c251379fc`
-## Linux-6.1.103
+## Linux-6.6.44
 Ядро операционной системы.
 - Домашняя страница: <https://www.kernel.org>
-- Скачать: <https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.103.tar.xz>
-- MD5 сумма: `9891c7d4ce481025b0d792b9d57911af`
+- Скачать: <https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.44.tar.xz>
+- MD5 сумма: `613b7d75598dbf359b180c11acac39cc`
 ## MPC-1.3.1
 Математические функции для комплексных чисел. Необходим для сборки GCC.
 - Домашняя страница: <http://www.multiprecision.org/>
@@ -43,11 +43,11 @@
 - Домашняя страница: <https://hewlettpackard.github.io/wireless-tools/>
 - Скачать: <https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.tar.gz>
 - MD5 сумма: `e06c222e186f7cc013fd272d023710cb`
-## binutils-2.42
+## binutils-2.43
 Этот пакет содержит компоновщик, ассемблер и другие утилиты для работы с объектными файлами.
 - Домашняя страница: <https://www.gnu.org/software/binutils>
-- Скачать: <https://sourceware.org/pub/binutils/releases/binutils-2.42.tar.xz>
-- MD5 сумма: `a075178a9646551379bfb64040487715`
+- Скачать: <https://sourceware.org/pub/binutils/releases/binutils-2.43.tar.xz>
+- MD5 сумма: `a54bb52cd75555416f316fbbe885925a`
 ## crust-0.6
 Низкоуровневый компонент для плат на базе Allwinner, предназначенный для уравления питанием. Во время глубокого сна ядра процессора, контроллер DRAM и большинство встроенных периферийных устройств отключаются от питания, что позволяет снизить электропотребление на >80%. На платах без PMIC crust также отвечает за упорядоченное включение и выключение устройства.
 - Домашняя страница: <https://github.com/crust-firmware/crust>
