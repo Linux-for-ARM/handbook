@@ -35,5 +35,5 @@ mdbook serve --open
 <details>
   <summary><b>Донат</b></summary>
   <p>Вы можете отблагодарить автора за проделанную работу:</p>
-  <blockquote><a href="https://boosty.to/linux-for-arm/donate">https://boosty.to/linux-for-arm</a></blockquote>
+  <blockquote>2202206252335406 (Сбер; Михаил Сергеевич)</blockquote>
 </details>
