@@ -19,6 +19,6 @@
 
 <details>
   <summary><b>Ну и конечно же вы можете отблагодарить автора за проделанную работу...</b></summary>
-  <p>... подписавшись на его Boosty:</p>
-  <blockquote><div align="center"><p><b><a href="https://boosty.to/linux-for-arm/donate">https://boosty.to/linux-for-arm/donate</a></b></p></div></blockquote>
+  <p>... отправив донат на карту Сбербанка:</p>
+  <blockquote><div align="center"><p><b>2202206252335406</b></p></div></blockquote>
 </details>
