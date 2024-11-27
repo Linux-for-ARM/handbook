@@ -22,7 +22,7 @@ Linux for ARM (LFA) - руководство по сборке из исходн
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 export PATH=$PATH:$HOME/.cargo/bin
 
-cargo install mdbook mdbook-pdf mdbook-admonish
+cargo install mdbook mdbook-pdf mdbook-admonish mdbook-variables
 ```
 
 ### Сборка руководства

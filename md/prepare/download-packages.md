@@ -9,8 +9,8 @@ cd src/
 Скачайте файлы `wget-list` и `md5sums`, которые будут использованы для скачивания исходного кода компонентов системы:
 
 ```bash
-wget https://linux-for-arm.github.io/lfa/1.1/wget-list
-wget https://linux-for-arm.github.io/lfa/1.1/md5sums
+wget https://linux-for-arm.github.io/lfa/{{lfa_ver}}/wget-list
+wget https://linux-for-arm.github.io/lfa/{{lfa_ver}}/md5sums
 ```
 
 И скачайте системные компоненты:
