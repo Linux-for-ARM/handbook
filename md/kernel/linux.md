@@ -72,67 +72,67 @@ make ARCH=arm64 CROSS_COMPILE=$LFA_TGT- dtbs
 Конфигурационный файл `.config` содержит все настройки конфигурации только что собранного ядра. Было бы неплохим сохранить этот файл для дальнейшего пользования:
 
 ```bash
-cp -v .config $LFA_SYS/boot/config-6.6.44
+cp -v .config $LFA_SYS/boot/config-{{linux_ver}}
 ```
 
 Скопируйте файл `System.map` в `/boot`:
 
 ```bash
-cp -v System.map $LFA_SYS/boot/System.map-6.6.44
+cp -v System.map $LFA_SYS/boot/System.map-{{linux_ver}}
 ```
 
 Полученное ядро будет находиться в директории `arch/arm64/boot`. Возможно, что там будет находиться несколько вариантов одного и того же ядра, просто с разным сжатием или добавлением помощников загрузчика. Следуйте инструкциям вашего загрузчика по копированию ядра в конечную систему. Например:
 
 ```bash
-cp -iv arch/arm64/boot/Image $LFA_SYS/boot/vmlinuz-6.6.44
+cp -iv arch/arm64/boot/Image $LFA_SYS/boot/vmlinuz-{{linux_ver}}
 ```
 
-Для того, чтобы не указывать в опциях ядра полное имя `vmlinuz-6.6.44` создайте символическую ссылку:
+Для того, чтобы не указывать в опциях ядра полное имя `vmlinuz-{{linux_ver}}` создайте символическую ссылку:
 
 ```bash
-ln -svf vmlinuz-6.6.44 $LFA_SYS/boot/vmlinuz
+ln -svf vmlinuz-{{linux_ver}} $LFA_SYS/boot/vmlinuz
 ```
 
 ### Установка файлов Devicetree
 
-Создайте в `$LFA_SYS/boot` директорию `dtb-6.6.44`:
+Создайте в `$LFA_SYS/boot` директорию `dtb-{{linux_ver}}`:
 
 ```bash
-mkdir -pv $LFA_SYS/boot/dtb-6.6.44
+mkdir -pv $LFA_SYS/boot/dtb-{{linux_ver}}
 ```
 
 И установите файлы Devicetree:
 
 ```bash
 make ARCH=arm64 CROSS_COMPILE=$LFA_TGT- \
-  INSTALL_DTBS_PATH=$LFA_SYS/boot/dtb-6.6.44 dtbs_install
+  INSTALL_DTBS_PATH=$LFA_SYS/boot/dtb-{{linux_ver}} dtbs_install
 ```
 
 Для того, чтобы не указывать в `boot.cmd`, который мы скоро напишем, версию ядра, сделайте символическую ссылку:
 
 ```bash
-ln -svf dtb-6.6.44 $LFA_SYS/boot/dtb
+ln -svf dtb-{{linux_ver}} $LFA_SYS/boot/dtb
 ```
 
 Создание ссылок на ряд периодически изменяющихся файлов сделает проще их обновление до новой версии: нужно просто установить новую версию файла ядра и директории с devicetree в `$LFA_SYS/boot/` и обновить символические ссылки. Этим мы можем оставить предыдущие версии ядра и devicetree, которые могут понадобиться, если окажется, что их новые версии работают некорректно или не работают вовсе.
 
 ```admonish warning title="Внимание"
-В `$LFA_SYS/boot/dtb-6.6.44` будут установлены скомпилированные файлы devicetree только для тех плат, поддержку которых вы указали при конфигурировании ядра. В этой директории будут созданы поддиректории с именами используемых в этих платах SoC, например:
+В `$LFA_SYS/boot/dtb-{{linux_ver}}` будут установлены скомпилированные файлы devicetree только для тех плат, поддержку которых вы указали при конфигурировании ядра. В этой директории будут созданы поддиректории с именами используемых в этих платах SoC, например:
 
-- `$LFA_SYS/boot/dtb-6.6.44/allwinner/`
-- `$LFA_SYS/boot/dtb-6.6.44/broadcom/`
-- `$LFA_SYS/boot/dtb-6.6.44/rockchip/`
+- `$LFA_SYS/boot/dtb-{{linux_ver}}/allwinner/`
+- `$LFA_SYS/boot/dtb-{{linux_ver}}/broadcom/`
+- `$LFA_SYS/boot/dtb-{{linux_ver}}/rockchip/`
 
 В этих поддиректориях будут содержаться файлы `*.dtb` для поддерживаемых плат. Если вам что-либо отсюда не нужно, то ради экономии места и уменьшения размера собранного дистрибутива вы можете удалить лишние файлы. Однако будьте готовы, что на каких-то компьютерах ваша система может не заработать.
 ```
 
 ~~~admonish note title="Содержимое пакета" collapsible=true
-- **Установленные файлы:** `.config-6.6.44`, `vmlinuz-6.6.44`, `vmlinuz`, `System.map-6.6.44`, `dtb-6.6.44/*`, `dtb/`
+- **Установленные файлы:** `.config-{{linux_ver}}`, `vmlinuz-{{linux_ver}}`, `vmlinuz`, `System.map-{{linux_ver}}`, `dtb-{{linux_ver}}/*`, `dtb/`
 
 ### Описание компонентов
 
-- `.config-6.6.44` — содержит параметры сборки ядра.
-- `vmlinuz-6.6.44`, `vmlinuz` — скомпилированное ядро Linux.
-- `System.map-6.6.44` — список адресов и символов; в нём указаны точки входа и адреса всех функций и структур данных в ядре. Иногда полезен при отладке.
-- `dtb-6.6.44/`, `dtb/` — директория с файлами [devicetree](../additional/dtb.md).
+- `.config-{{linux_ver}}` — содержит параметры сборки ядра.
+- `vmlinuz-{{linux_ver}}`, `vmlinuz` — скомпилированное ядро Linux.
+- `System.map-{{linux_ver}}` — список адресов и символов; в нём указаны точки входа и адреса всех функций и структур данных в ядре. Иногда полезен при отладке.
+- `dtb-{{linux_ver}}/`, `dtb/` — директория с файлами [devicetree](../additional/dtb.md).
 ~~~

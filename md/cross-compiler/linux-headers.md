@@ -3,7 +3,7 @@
 {{#include pkgs/linux-headers.md}}
 
 ```admonish warning title="Внимание"
-Обратите внимание, что исходный код `linux-headers` содержится в архиве с ядром Linux-6.6.44.
+Обратите внимание, что исходный код `linux-headers` содержится в архиве с ядром Linux-{{linux_ver}}.
 ```
 
 ## Настройка
