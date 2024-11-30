@@ -68,7 +68,7 @@
 - Домашняя страница: <https://github.com/rockchip-linux/rkbin>
 - Скачать: <https://raw.githubusercontent.com/Linux-for-ARM/packages/master/rkbin/rkbin-master.tar.xz>
 - MD5 сумма: `ad190429dc735449487d494f4696823f`
-## u-boot-2023.10
+## u-boot-2024.04
 Загрузчик операционной системы, предназначенный для встраиваемых систем на MIPS, ARM, PowerPC и т.д.
 - Домашняя страница: <https://source.denx.de/u-boot/u-boot>
 - Скачать: <https://source.denx.de/u-boot/u-boot/-/archive/v2024.04/u-boot-v2024.04.tar.bz2>
