@@ -20,7 +20,7 @@ command = "mdbook-admonish"
 assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
 
 [preprocessor.variables.variables]
-lfa_ver = "1.1.1"
+lfa_ver = "1.2-dev"
 linux_ver = "6.6.44"
 
 # [output.pdf]
