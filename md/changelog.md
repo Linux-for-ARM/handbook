@@ -21,6 +21,7 @@
 
 ## Обновления
 
+- []
 - [Обновление binutils 2.42 -> 2.43 (#64)](https://github.com/Linux-for-ARM/handbook/pull/64)
 - [Обновление Linux 6.1.103 -> 6.6.44 (#63)](https://github.com/Linux-for-ARM/handbook/pull/63)
 

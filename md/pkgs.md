@@ -53,11 +53,11 @@
 - Домашняя страница: <https://github.com/crust-firmware/crust>
 - Скачать: <https://raw.githubusercontent.com/Linux-for-ARM/packages/master/crust/crust-0.6.tar.gz>
 - MD5 сумма: `e558d2365411c82d0393e47e57aa7bea`
-## iana-etc-20240125
+## iana-etc-20241122
 Данные для сетевых служб и сервисов. Необходим для обеспечения надлежащих сетевых возможностей.
 - Домашняя страница: <https://www.iana.org/protocols>
-- Скачать: <https://github.com/Mic92/iana-etc/releases/download/20240502/iana-etc-20240502.tar.gz>
-- MD5 сумма: `73921d46a934eb5ac4286fc8111c2174`
+- Скачать: <https://github.com/Mic92/iana-etc/releases/download/20241122/iana-etc-20241122.tar.gz>
+- MD5 сумма: `38064a8e7c2233e23911ef9d39360584`
 ## musl-1.2.5
 Минималистичная стандартная библиотека языка С.
 - Домашняя страница: <https://musl.libc.org>
