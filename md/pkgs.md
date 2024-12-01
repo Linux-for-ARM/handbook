@@ -67,7 +67,7 @@
 Прошивка BL31 для тех Rockchip SoC, для которых не обеспечена поддержка BL31 из состава TF-A.
 - Домашняя страница: <https://github.com/rockchip-linux/rkbin>
 - Скачать: <https://raw.githubusercontent.com/Linux-for-ARM/packages/master/rkbin/rkbin-master.tar.xz>
-- MD5 сумма: `ad190429dc735449487d494f4696823f`
+- MD5 сумма: `8e26a9aaeacd6f41839d204ca75cdfd7`
 ## u-boot-2024.04
 Загрузчик операционной системы, предназначенный для встраиваемых систем на MIPS, ARM, PowerPC и т.д.
 - Домашняя страница: <https://source.denx.de/u-boot/u-boot>

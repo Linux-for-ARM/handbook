@@ -3,7 +3,7 @@ version = "master"
 description = "Прошивка BL31 для тех Rockchip SoC, для которых не обеспечена поддержка BL31 из состава TF-A."
 home_page = "https://github.com/rockchip-linux/rkbin"
 download = "https://raw.githubusercontent.com/Linux-for-ARM/packages/master/rkbin/rkbin-master.tar.xz"
-md5 = "ad190429dc735449487d494f4696823f"
+md5 = "8e26a9aaeacd6f41839d204ca75cdfd7"
 
 [package.GCC]
 version = "13.2.0"
