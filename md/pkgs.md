@@ -33,11 +33,11 @@
 - Домашняя страница: <https://www.mpfr.org>
 - Скачать: <https://ftp.gnu.org/gnu/mpfr/mpfr-4.2.1.tar.xz>
 - MD5 сумма: `523c50c6318dde6f9dc523bc0244690a`
-## TF-A-2.10.3
+## TF-A-2.10.9
 Проект Trusted Firmware-A предоставляет эталонную реализацию безопасного программного обеспечения для процессоров класса ARMv7-A и ARMv8-A.
 - Домашняя страница: <https://www.trustedfirmware.org/projects/tf-a/>
-- Скачать: <https://raw.githubusercontent.com/Linux-for-ARM/packages/master/tf-a/trusted-firmware-a.git-refs_tags_lts-v2.10.3.tar.gz>
-- MD5 сумма: `f8cf23ca23d6de58ff713bbbf87372fd`
+- Скачать: <https://raw.githubusercontent.com/Linux-for-ARM/packages/master/tf-a/trusted-firmware-a.git-refs_tags_lts-v2.10.9.tar.gz>
+- MD5 сумма: `42090a81f64db8d017354e86fdc2775f`
 ## Wireless Tools-29
 Набор инструментов для работы с Wireless Extensions (WE — API ядра Linux, позволяющий драйверу передавать в пользовательское пространство конфигурацию и статистику, характерные для беспроводных локальных сетей).
 - Домашняя страница: <https://hewlettpackard.github.io/wireless-tools/>
