@@ -21,6 +21,7 @@
 
 ## Обновления
 
+- [Обновление rkbin (#70, #71)](https://github.com/Linux-for-ARM/handbook/pull/71)
 - [Обновление TF-A 2.10.3 -> 2.10.9 (#68, #69)](https://github.com/Linux-for-ARM/handbook/pull/69)
 - [Обновление iana-etc 20240125 -> 20241122](https://github.com/Linux-for-ARM/handbook/commit/cd5d6d6ac0c672759f32e127da21a6252ded8944)
 - [Обновление binutils 2.42 -> 2.43 (#64)](https://github.com/Linux-for-ARM/handbook/pull/64)
