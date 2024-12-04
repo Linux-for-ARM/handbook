@@ -6,6 +6,10 @@
 Сборка пакета осуществляется с помощью кросс-компилятора `or1k-none-elf`.
 ```
 
+> **Патчи:** для `crust` вы можете найти дополнительные опциональные патчи в [**репозитории Armbian**](https://github.com/armbian/build/tree/main/patch/u-boot/u-boot-sunxi-crust).
+
+> Если вы собираете систему для OrangePi 3 LTS, можете применить патч [`add-defconfig-for-orangepi-3-lts`](https://github.com/armbian/build/blob/main/patch/crust/add-defconfig-for-orangepi-3-lts.patch). Если вы собираете систему для другого компьютера, оснащённого SoC H3, H5, H6, A64, можете применить [**соответствующий патч**](https://github.com/armbian/build/blob/main/patch/crust/add-defconfig-for-h3-h5-h6-a64-platforms.patch) для добавления их поддержки.
+
 ## Настройка
 
 ```bash
