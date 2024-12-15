@@ -97,3 +97,11 @@
 ![](pic/oss2-3.png)
 
 На схеме пунктиром обозначен путь обращения из ядра ОС в TEE.
+
+---
+
+> **Смотрите также:**
+>
+> - [**Boot process**](http://linux-sunxi.org/Boot_Process) (<http://linux-sunxi.org/>)
+> - [**arm/BootProcess**](https://wiki.freebsd.org/arm/BootProcess) (<https://wiki.freebsd.org/arm/>) — статья пусть и для FreeBSD, но для общего понимания сойдёт
+> - [**How does ARM boot?**](https://fedevel.com/blog/how-does-arm-boot) <https://fedevel.com/>

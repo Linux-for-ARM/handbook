@@ -11,6 +11,7 @@
 - [Опыт создания сборок Linux под одноплатники с поддержкой обновлений](https://habr.com/ru/articles/470519/);
 - [Немного о ARM Security Extensions (aka ARM TrustZone)](https://habr.com/ru/articles/309618/);
 - [[Сборка системы для Orange Pi 5] Orange Pi 5 (как настоящий...)](https://habr.com/ru/articles/775488/);
+- [LFS для SBC](https://4pda.to/forum/index.php?showtopic=1050391);
 - [Сборка прошивки из исходников для Orange PI i96(Orange PI 2g-iot)](https://habr.com/ru/articles/763996/);
 - [Документация загрузчика U-Boot](https://docs.u-boot.org/en/latest/index.html);
 - [LFS Hints](https://linuxfromscratch.org/hints/)
