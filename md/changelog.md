@@ -12,6 +12,7 @@
 
 ## Изменения
 
+- [Обновил ссылки на внешние ресурсы (#73)](https://github.com/Linux-for-ARM/handbook/pull/73)
 - [Исправил сборочные инструкции ядра Linux](https://github.com/Linux-for-ARM/handbook/commit/ee1060dac08d1e5a699e4c579e3223f9a8ddeb30)
 - [Исправил нерабочую ссылку на LFA Bootscripts (#61)](https://github.com/Linux-for-ARM/handbook/pull/61)
 - [Отключил сборку BusyBox с поддержкой PAM (#60)](https://github.com/Linux-for-ARM/handbook/pull/60)
