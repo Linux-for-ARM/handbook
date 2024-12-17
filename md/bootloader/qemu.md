@@ -44,6 +44,20 @@ make qemu_${QEMU_ARCH}_defconfig acpi.config
 make CROSS_COMPILE=$LFA_TGT-
 ```
 
+В итоге будет сгенерирован двоичный файл `u-boot.bin`.
+
+```admonish warning title="Важно"
+В разделах о сборке загрузчика U-Boot для SoC Allwinner, Broadcom и Rockchip предполагается, что собранный двоичный файл с загрузчиком будет «встроен» в `img`-образ, который будет сгенерирован в разделе №8 «Сборка образа». Здесь же таких действий совершать не требуется — всё, что вам нужно, так это скопировать собранный двоичный файл загрузчика в специально отведённое для этого место, **не встраивая** его в генерируемый образ системы.
+```
+
+## Сохранение образа U-Boot
+
+Скопируйте скомпилированный файл в директорию `$LFA` для удобного доступа к нему в будущем:
+
+```bash
+cp -v u-boot.bin $LFA/bootloader.bin
+```
+
 ## Запуск U-Boot
 
 Минимальная команда для запуска эмулятора QEMU с загрузчиком U-Boot выглядит так:
@@ -54,7 +68,7 @@ make CROSS_COMPILE=$LFA_TGT-
 qemu-system-aarch64 -machine virt \
   -nographic \
   -cpu cortex-a57 \
-  -bios u-boot.bin
+  -bios $LFA/bootloader.bin
 ```
 
 - для других архитектур семейства ARM:
@@ -62,7 +76,7 @@ qemu-system-aarch64 -machine virt \
 ```bash
 qemu-system-arm -machine virt \
   -nographic \
-  -bios u-boot.bin
+  -bios $LFA/bootloader.bin
 ```
 
 > **Объяснение новых значений:**
@@ -70,19 +84,21 @@ qemu-system-arm -machine virt \
 > `-nographic` — обеспечивает вывод данных в терминал;
 >
 > `-cpu cortex-a57` — по какой-то странной причине программе `qemu-system-aarch64` необходимо явно указать использование 64-битного процессора, иначе эмулятор запустится в 32-битном режиме.
+>
+> `-bios $LFA/bootloader.bin` — использовать скомпилированный загрузчик U-Boot.
 
 Вы также можете создать образ, в котором будут храниться сохранённые переменные окружения U-Boot. Это можно сделать, выполнив следующие действия:
 
 - Создать образ `envstore.img` с помощью `qemu-img`:
 
 ```bash
-qemu-img create -f raw envstore.img 64M
+qemu-img create -f raw $LFA/envstore.img 64M
 ```
 
 - Передать команде для запуска виртуальной машины параметр `pflash drive`:
 
 ```bash
-  -drive if=pflash,format=raw,index=1,file=envstore.img
+  -drive if=pflash,format=raw,index=1,file=$LFA/envstore.img
 ``` 
 
 ## Эмуляция блочных устройств
