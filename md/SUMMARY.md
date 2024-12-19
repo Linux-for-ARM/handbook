@@ -60,7 +60,7 @@
   - [Загрузочные скрипты](boot-files/bootscripts.md)
   - [Создание uInitrd](boot-files/uInitrd.md)
   - [Создание boot.scr](boot-files/boot.scr.md)
-- [Сборка образа и запуск](img-and-install/README.md)
+- [Сборка образа и запуск системы](img-and-install/README.md)
   - [Сборка образа для QEMU](img-and-install/img-qemu.md)
   - [Сборка образа для Allwinner](img-and-install/img-allwinner.md)
   - [Сборка образа (для остальных)](img-and-install/img-other.md)
