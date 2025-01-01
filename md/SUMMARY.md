@@ -59,7 +59,10 @@
 - [Создание прочих загрузочных файлов](boot-files/README.md)
   - [Загрузочные скрипты](boot-files/bootscripts.md)
   - [Создание uInitrd](boot-files/uInitrd.md)
-  - [Создание boot.scr](boot-files/boot.scr.md)
+  <!-- - [Создание boot.scr](boot-files/boot.scr.md) -->
+  - [Создание boot.scr](boot-files/boot-scr/README.md)
+    - [Для QEMU](boot-files/boot-scr/qemu.md)
+    - [Для реального оборудования](boot-files/boot.scr/real-hardware.md)
 - [Сборка образа и запуск системы](img-and-install/README.md)
   - [Сборка образа для QEMU](img-and-install/img-qemu.md)
   - [Сборка образа для Allwinner](img-and-install/img-allwinner.md)
