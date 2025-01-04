@@ -18,9 +18,21 @@ BOLT> boot -bsu -elf flash0.u-boot1
 
 Предполагается, что I-кеш и D-кеш уже включены при входе в U-Boot.
 
+## Запись образа системы
+
+### Создание образа с базовой ОС
+
+{{#include create_img.md}}
+
+### Копирование файлов
+
+{{#include rootfs.md}}
+
+Теперь вам остаётся записать образ на SD- или иной носитель, с которого может загружаться компьютер.
+
 ---
 
 > **Смотрите также:**
 >
-> - [**BCM7445 and BCM7260**](https://docs.u-boot.org/en/latest/board/broadcom/bcm7xxx.html) <https://docs.u-boot.org/>;
+> - [**BCM7445 and BCM7260**](https://docs.u-boot.org/en/latest/board/broadcom/bcm7xxx.html) (<https://docs.u-boot.org/>);
 > - [**Broadcom**](https://docs.u-boot.org/en/latest/board/broadcom/index.html);
