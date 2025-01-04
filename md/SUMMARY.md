@@ -66,6 +66,7 @@
 - [Сборка образа и запуск системы](img-and-install/README.md)
   - [Сборка образа для QEMU](img-and-install/img-qemu.md)
   - [Сборка образа для Allwinner](img-and-install/img-allwinner.md)
+  - [Сборка образа для Broadcom](img-and-install/img-broadcom.md)
   - [Сборка образа (для остальных)](img-and-install/img-other.md)
   - [Запуск в QEMU](img-and-install/run-qemu.md)
   - [Запись на SD-карту или иной носитель](img-and-install/dd.md)
