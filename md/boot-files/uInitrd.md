@@ -35,4 +35,5 @@ cp -v uInitrd $LFA_SYS/boot
 
 > **Смотрите также:**
 >
-> - [**Image vs zImage vs uImage**](https://stackoverflow.com/questions/22322304/image-vs-zimage-vs-uimage) (<https://stackoverflow.com/>).
+> - [**Image vs zImage vs uImage**](https://stackoverflow.com/questions/22322304/image-vs-zimage-vs-uimage) (<https://stackoverflow.com/>);
+> - [**U-Boot new uImage source file format (bindings definition)**](https://github.com/wowotechX/u-boot/blob/x_integration/doc/uImage.FIT/source_file_format.txt);
