@@ -9,6 +9,7 @@ mkdir -pv $LFA_CROSS
 ln -svf . $LFA_CROSS/usr
 
 echo "export LFA_CROSS=\$LFA/tools/\$LFA_TGT" >> ~/.bashrc
+source ~/.bashrc
 ```
 
 Кроме того, вам необходимо создать директорию, где будет храниться исходный код компонентов:
