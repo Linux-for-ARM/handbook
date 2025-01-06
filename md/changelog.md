@@ -12,6 +12,7 @@
 
 ## Изменения
 
+- [Добавлены замечания о профилях производительности](https://github.com/Linux-for-ARM/handbook/commit/209048be8c4522d846ddfc4105782da948f5533d)
 - [Добавлена команда для применения изменений параметров BASH](https://github.com/Linux-for-ARM/handbook/commit/7eeed5a72d5ecb597f8912beabb39ea2868bfa0a)
 - [Объяснено применение команды `su`](https://github.com/Linux-for-ARM/handbook/commit/5885182db607b824ea3f727be4de7d11bedbae1b)
 - [Расширены сведения о переменной `MAKEFLAGS`; добавлена команда для применения параметров BASH](https://github.com/Linux-for-ARM/handbook/commit/23e0d0ed246bd0afefc68b2b2f250268a061c083)
