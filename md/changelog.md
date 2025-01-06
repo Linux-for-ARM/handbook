@@ -12,6 +12,8 @@
 
 ## Изменения
 
+- [Переработан раздел объявления переменных сборки для не-AArch64-архитектур](https://github.com/Linux-for-ARM/handbook/commit/f75c419f075d3204c4096e12c09d62d8fca31200)
+- [Добавлены пояснения по поводу триплета целевой машины](https://github.com/Linux-for-ARM/handbook/commit/1fc86dfeceda8090401ddd84f0e138a3afede653)
 - [Добавлены замечания о профилях производительности](https://github.com/Linux-for-ARM/handbook/commit/209048be8c4522d846ddfc4105782da948f5533d)
 - [Добавлена команда для применения изменений параметров BASH](https://github.com/Linux-for-ARM/handbook/commit/7eeed5a72d5ecb597f8912beabb39ea2868bfa0a)
 - [Объяснено применение команды `su`](https://github.com/Linux-for-ARM/handbook/commit/5885182db607b824ea3f727be4de7d11bedbae1b)
