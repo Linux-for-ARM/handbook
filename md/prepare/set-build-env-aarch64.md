@@ -30,6 +30,9 @@ export LFA_FPU="одно из значений из таблицы ниже"
 export LFA_HOST=$(echo ${MACHTYPE} | sed "s/-[^-]*/-cross/")
 export LFA_TGT="aarch64-linux-musleabihf"
 ```
+
+{{#include about-triplet.md}}
+
 <!-- 
 export LFA_TGT="триплет для целевой машины"
 -->

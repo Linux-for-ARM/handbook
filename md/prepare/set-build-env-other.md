@@ -36,6 +36,8 @@ export LFA_TGT="триплет для целевой машины"
 | `soft` или `softfp`   | `arm-linux-musleabi`   |
 | `hard`                | `arm-linux-musleabihf` |
 
+{{#include about-triplet.md}}
+
 Выберите архитектуру, для которой будете собирать систему:
 
 ```bash
