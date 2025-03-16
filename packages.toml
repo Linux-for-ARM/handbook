@@ -34,10 +34,10 @@ download = "https://hewlettpackard.github.io/wireless-tools/wireless_tools.29.ta
 md5 = "e06c222e186f7cc013fd272d023710cb"
 
 [package.TF-A]
-version = "2.10.9"
+version = "2.10.14"
 description = "Проект Trusted Firmware-A предоставляет эталонную реализацию безопасного программного обеспечения для процессоров класса ARMv7-A и ARMv8-A."
 home_page = "https://www.trustedfirmware.org/projects/tf-a/"
-download = "https://raw.githubusercontent.com/Linux-for-ARM/packages/master/tf-a/trusted-firmware-a.git-refs_tags_lts-v2.10.9.tar.gz"
+download = "https://raw.githubusercontent.com/Linux-for-ARM/packages/master/tf-a/trusted-firmware-a.git-refs_tags_lts-v2.10.14.tar.gz"
 md5 = "42090a81f64db8d017354e86fdc2775f"
 
 [package.MPC]
